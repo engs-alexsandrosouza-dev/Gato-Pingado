@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gato Pingado</title>
+    <link rel="stylesheet" href="cardapio.css">
+</head>
+<body id="pagina">
+    <header class="cabecalho" id="inicio">
+        <div class="cabecalho-conteudo">
+            <p class="titulo">Cardapio</p>
+            <p class="slogan">as melhores delicias do momento.</p>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <a href="#inicio">Início</a>
+        <a href="#Gatos">Os gatos</a>
+        <a href="----a">Delivery</a>
+        <a href="----">Nossas redes</a>
+        <a href="----">Sobre nós</a>
+    </nav>
+
+    <main id="conteudo-principal">
+        <section>
+            <div class="grid">
+                <!-- Cada item agora possui a imagem ao lado do nome -->
+                <div class="grid-item"
+                     onclick="abrirModal('Bruschetta', 'Pão tostado com tomate, manjericão e azeite.', 'R$ 18,00', 'imagens/paleta.jpg')">
+                    <img src="imagens/paleta.jpg" alt="Bruschetta" class="grid-img">
+                    <span>Bruschetta</span>
+                </div>
+
+                <div class="grid-item"
+                     onclick="abrirModal('Dadinho de tapioca', 'Dadinho crocante acompanhado de molho da casa.', 'R$ 22,00', 'imagens/dadinho.jpg')">
+                    <img src="imagens/dadinho.jpg" alt="Dadinho de tapioca" class="grid-img">
+                    <span>Dadinho de tapioca</span>
+                </div>
+
+                <div class="grid-item"
+                     onclick="abrirModal('Batata rústica', 'Batatas assadas com ervas e temperos especiais.', 'R$ 20,00', 'imagens/batata.jpg')">
+                    <img src="imagens/batata.jpg" alt="Batata rústica" class="grid-img">
+                    <span>Batata rústica</span>
+                </div>
+
+                <div class="grid-item"
+                     onclick="abrirModal('Pastelzinho', 'Porção de pastéis crocantes com recheio de queijo.', 'R$ 25,00', 'imagens/pastel.jpg')">
+                    <img src="imagens/pastel.jpg" alt="Pastelzinho" class="grid-img">
+                    <span>Pastelzinho</span>
+                </div>
+
+                <div class="grid-item"
+                     onclick="abrirModal('Anéis de cebola', 'Anéis de cebola empanados e crocantes.', 'R$ 19,00', 'imagens/cebola.jpg')">
+                    <img src="imagens/cebola.jpg" alt="Anéis de cebola" class="grid-img">
+                    <span>Anéis de cebola</span>
+                </div>
+
+                <div class="grid-item"
+                     onclick="abrirModal('Entrada especial', 'Uma deliciosa combinação especial da casa.', 'R$ 28,00', 'imagens/especial.jpg')">
+                    <img src="imagens/especial.jpg" alt="Entrada especial" class="grid-img">
+                    <span>Entrada especial</span>
+                </div>
+
+                                <div class="grid-item"
+                     onclick="abrirModal('Anéis de cebola', 'Anéis de cebola empanados e crocantes.', 'R$ 19,00', 'imagens/cebola.jpg')">
+                    <img src="imagens/cebola.jpg" alt="Anéis de cebola" class="grid-img">
+                    <span>Anéis de cebola</span>
+                </div>
+
+                <div class="grid-item"
+                     onclick="abrirModal('Entrada especial', 'Uma deliciosa combinação especial da casa.', 'R$ 28,00', 'imagens/especial.jpg')">
+                    <img src="imagens/especial.jpg" alt="Entrada especial" class="grid-img">
+                    <span>Entrada especial</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Janela de informações do prato  -->
+    <div id="modal" class="modal">
+        <div class="modal-conteudo">
+            <!-- Botão para fechar -->
+            <button class="fechar"
+                    onclick="fecharModal()"
+                    aria-label="Fechar janela">
+                &times;
+            </button>
+
+            <!-- Imagem em cima no pop-up -->
+            <img id="modal-imagem" src="" alt="" class="modal-img">
+
+            <!-- Título em baixo no pop-up -->
+            <h2 id="modal-titulo"></h2>
+
+            <!-- Descrição e Preço -->
+            <p id="modal-descricao"></p>
+            <p id="modal-preco"></p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function abrirModal(nome, descricao, preco, imagem) {
+            document.getElementById("modal-titulo").textContent = nome;
+            document.getElementById("modal-descricao").textContent = descricao;
+            document.getElementById("modal-preco").textContent = preco;
+            
+            const imgElement = document.getElementById("modal-imagem");
+            imgElement.src = imagem;
+            imgElement.alt = nome;
+
+            document.getElementById("modal").style.display = "flex";
+        }
+
+        function fecharModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+
+    <footer id="rodape" class="rodape">
+        <p> <strong>&copy; 2026 - Isabely Gislaine, Marya Motta, Emily Sequineu, alex </strong> </p>
+    </footer>
+</body>
+</html>
