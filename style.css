@@ -144,3 +144,26 @@ button:hover,
     margin: 0.5rem 0;
 }
 
+.historia-card{
+    background-color: var(--card--background);
+    border-left: 0.5rem solid var(--caramel);
+    border-radius: 0.7rem;
+    padding: 2rem;
+}
+
+.historia-card p {
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+.info-card{
+    background-color: var(--card--background);
+    border: 2px solid var(var(--warm-beige));
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+    transition: transform 0.2s ease;
+}
