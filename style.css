@@ -199,3 +199,30 @@ button:hover,
     margin: 0 auto 1.5rem;
 }
 
+.cat-small h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    margin: 0.5rem 0 1rem;
+}
+.behavior-list{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.behavior-list article{
+    background-color: var(--card--background);
+    border: 2px solid var(--warm-beige);
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+}
+
+.behavior-list h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    margin-top: 0;
+}
+
+.behavior-list p{
+    margin-bottom: 0;
+}
