@@ -222,7 +222,19 @@ button:hover,
     font-size: 1.4rem;
     margin-top: 0;
 }
-
 .behavior-list p{
     margin-bottom: 0;
+}
+.oque .fazer {
+    border-top: 0.5rem solid #426443;
+}
+.oque .nao-fazer {
+    border-top: 0.5rem solid #8B4A3A;
+}
+.info-card ul {
+    padding-left: 1.5rem;
+    margin-bottom: 0;
+}
+.info-card li {
+    margin: 0.6rem 0;
 }
