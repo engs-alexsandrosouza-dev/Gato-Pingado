@@ -134,8 +134,11 @@ button:hover,
     padding: 4rem 1.5rem;
 }
 
-section-heading{
+.section-heading{
     margin-bottom: 2rem;
 }
 
-
+.section-heading h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(1.8rem, 4vw, 20.7rem);
+}
