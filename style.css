@@ -12,3 +12,18 @@
 
     --font-scale: 1;
 }
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth; 
+}
+
+body{
+    margin: 0;
+    background-color: var(--cream);
+    color: var(--texto);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
