@@ -1,7 +1,7 @@
 /* css COMPARTILHADO QUE CRIEI PARA AS PAGINAS GATOS E SOBRE NÓS - EMILY */
 
 :root{
-    --caramel: #C5B85A;
+    --caramel: #E6C9A8;
     --warm-beige: #E6C9A8;
     --cream: #FFF1D6;
     --espresso: #3B2924;
@@ -226,7 +226,7 @@ button:hover,
     margin-bottom: 0;
 }
 .oque .fazer {
-    border-top: 0.5rem solid #426443;
+    border-top: 0.5rem solid #572e24;
 }
 .oque .nao-fazer {
     border-top: 0.5rem solid #8B4A3A;
@@ -237,4 +237,32 @@ button:hover,
 }
 .info-card li {
     margin: 0.6rem 0;
+}
+.cta-section {
+    text-align: center;
+    background-color: var(--caramel);
+    padding: 4rem 1.5rem;
+}
+.cta-section h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+    margin: 0.5rem 0;
+}
+.cta-section p {
+    max-width: 700px;
+    margin: 1rem auto 1rem;
+}
+.button-secondary {
+    background-color: var(--espresso);
+    color: var(--cream);
+    border-color: var(--espresso);
+}
+.site-footer {
+text-align: center;
+background-color: var(--espresso);
+color: var(--cream);
+padding: 1rem;
+}
+.site-footer p {
+ margin: 0;
 }
