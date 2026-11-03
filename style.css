@@ -1,2 +1,14 @@
 /* css COMPARTILHADO QUE CRIEI PARA AS PAGINAS GATOS E SOBRE NÓS - EMILY */
 
+:root{
+    --caramel: #C5B85A;
+    --warm-beige: #E6C9A8;
+    --cream: #FFF1D6;
+    --espresso: #3B2924;
+
+    --texto: #3B2924;
+    --fundo: #FFF1D6;
+    --cartao: #FFFFFF;
+
+    --font-scale: 1;
+}
