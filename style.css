@@ -141,4 +141,5 @@ button:hover,
 .section-heading h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: clamp(1.8rem, 4vw, 20.7rem);
+    margin: 0.5rem 0;
 }
