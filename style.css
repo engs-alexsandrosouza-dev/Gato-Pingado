@@ -70,3 +70,30 @@ button:focus-visible {
     padding: 0.3rem;
 }
 
+.site-header nav a[aria-current="page"] {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+    font-weight: bold;
+}
+
+.acessibilidade-botao{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+button,
+.button{
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid var(--espresso);
+    border-radius: 0.5rem;
+    padding: 0.7rem 1rem;
+    background-color: var(--cream);
+    color: var(--espresso);
+    text-decoration: none;
+    display: inline-block;
+}
