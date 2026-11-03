@@ -15,64 +15,100 @@
     </header>
 
     <nav class="menu">
-        <a href="#inicio">Início</a>
-        <a href="#Gatos">Os gatos</a>
-        <a href="----a">Delivery</a>
-        <a href="----">Nossas redes</a>
-        <a href="----">Sobre nós</a>
+        <a href="index.html">Início</a>
+        <a href="cardapio.html">Cardapio</a>
+        <a href="gatos.html">Os gatos</a>
+        <a href="adoção.html">Adoção</a>
+        <a href="loja.html"> loja</a>
+        <a href="redes.html">Nossas redes</a>
+        <a href="sobre.html">Sobre nós</a>
+        <a href="perfil.html">Perfil</a>
     </nav>
 
     <main id="conteudo-principal">
         <section>
+            <section>
+            <h2>Docinhos</h2>
             <div class="grid">
                 <!-- Cada item agora possui a imagem ao lado do nome -->
                 <div class="grid-item"
-                     onclick="abrirModal('Bruschetta', 'Pão tostado com tomate, manjericão e azeite.', 'R$ 18,00', 'imagens/paleta.jpg')">
-                    <img src="imagens/paleta.jpg" alt="Bruschetta" class="grid-img">
-                    <span>Bruschetta</span>
+                    onclick="abrirModal('Cheesecake patinhas vermelhas', 'Cheesecake cremoso com base crocante de biscoito, coberto com geleia de frutas vermelhas e decorado com morangos, framboesas, mirtilos, chantilly e um delicado biscoito em formato de gatinho.', 'R$ 20,00', 'imagens/cardapio/Cheesecake Patinhas Vermelhas.jpeg')">
+                    <img src="imagens/cardapio/Cheesecake Patinhas Vermelhas.jpeg" alt="Fatia de cheesecake cremosa decorada com detalhes delicados em formato de patinhas." class="grid-img">
+                    <span>Cheesecake</span>
                 </div>
 
                 <div class="grid-item"
-                     onclick="abrirModal('Dadinho de tapioca', 'Dadinho crocante acompanhado de molho da casa.', 'R$ 22,00', 'imagens/dadinho.jpg')">
-                    <img src="imagens/dadinho.jpg" alt="Dadinho de tapioca" class="grid-img">
-                    <span>Dadinho de tapioca</span>
+                    onclick="abrirModal('Misto quente', 'Misto quente crocante acompanhado de molho da casa.', 'R$ 10,00', 'imagens/cardapio/Misto Quente.jpeg')">
+                    <img src="imagens/cardapio/Misto Quente.jpeg" alt="Sanduíche misto quente com pão dourado e recheio derretido de queijo e presunto." class="grid-img">
+                    <span>Misto quente</span>
                 </div>
 
                 <div class="grid-item"
-                     onclick="abrirModal('Batata rústica', 'Batatas assadas com ervas e temperos especiais.', 'R$ 20,00', 'imagens/batata.jpg')">
-                    <img src="imagens/batata.jpg" alt="Batata rústica" class="grid-img">
-                    <span>Batata rústica</span>
+                    onclick="abrirModal('Patacakes', 'Pilha de panquecas americanas fofinhas, cobertas com calda de chocolate, morangos frescos, chantilly e um biscoito decorado de gatinho.', 'R$ 15,00', 'imagens/cardapio/Patacakes.jpeg')">
+                    <img src="imagens/cardapio/Patacakes.jpeg" alt="Pilha de panquecas douradas cobertas com calda, chantilly e biscoitos decorados com rostos de gatos." class="grid-img">
+                    <span>Patacakes</span>
                 </div>
 
                 <div class="grid-item"
-                     onclick="abrirModal('Pastelzinho', 'Porção de pastéis crocantes com recheio de queijo.', 'R$ 25,00', 'imagens/pastel.jpg')">
-                    <img src="imagens/pastel.jpg" alt="Pastelzinho" class="grid-img">
-                    <span>Pastelzinho</span>
+                    onclick="abrirModal('Croissant ', 'Croissant artesanal de massa folhada, dourado por fora e macio por dentro, decorado com detalhes de gatinho em chocolate. Perfeito para acompanhar um café ou cappuccino.', 'R$ 12,00', 'imagens/cardapio/Croissant.jpeg')">
+                    <img src="imagens/cardapio/Croissant.jpeg" alt="Croissant dourado e folhado, servido em um prato em uma cafeteria aconchegante." class="grid-img">
+                    <span>Croissant</span>
                 </div>
 
                 <div class="grid-item"
-                     onclick="abrirModal('Anéis de cebola', 'Anéis de cebola empanados e crocantes.', 'R$ 19,00', 'imagens/cebola.jpg')">
-                    <img src="imagens/cebola.jpg" alt="Anéis de cebola" class="grid-img">
-                    <span>Anéis de cebola</span>
+                    onclick="abrirModal('Meowcarons', 'Macarons delicados em formato de rostinho de gato, com casquinha levemente crocante e recheio macio. Disponíveis nos sabores chocolate, baunilha e morango.', 'R$ 06,00 a unidade ou a caixinha com 4 unidades por R$ 20,00.' , 'imagens/cardapio/Meowcarons.jpeg')">
+                    <img src="imagens/cardapio/Meowcarons.jpeg" alt="Macarons coloridos decorados com pequenos rostos de gatos, organizados em um prato." class="grid-img">
+                    <span>Meowcarons</span>
+                </div>
                 </div>
 
+
+                
+                <h2>Bebidas Quentes</h2>
+
+                <div class="grid">
+
                 <div class="grid-item"
-                     onclick="abrirModal('Entrada especial', 'Uma deliciosa combinação especial da casa.', 'R$ 28,00', 'imagens/especial.jpg')">
-                    <img src="imagens/especial.jpg" alt="Entrada especial" class="grid-img">
-                    <span>Entrada especial</span>
+                    onclick="abrirModal('cat-late', 'Chocolate quente cremoso com cobertura de chantilly, calda de chocolate e raspas de chocolate meio amargo.', 'R$ 14,00', 'imagens/cardapio/cat-late.jpeg')">
+                    <img src="imagens/cardapio/cat-late.jpeg" alt="Achocolatado com chantilly decorado com biscoito de patinha, servido em uma xícara temática de gatos." class="grid-img">
+                    <span>cat-late</span>
                 </div>
 
                                 <div class="grid-item"
-                     onclick="abrirModal('Anéis de cebola', 'Anéis de cebola empanados e crocantes.', 'R$ 19,00', 'imagens/cebola.jpg')">
-                    <img src="imagens/cebola.jpg" alt="Anéis de cebola" class="grid-img">
-                    <span>Anéis de cebola</span>
+                    onclick="abrirModal('Catpuccino', 'Cappuccino cremoso com café espresso, leite vaporizado e uma camada generosa de espuma, polvilhado com chocolate em pó.', 'R$ 12,00', 'imagens/cardapio/Catpuccino.jpeg')">
+                    <img src="imagens/cardapio/Catpuccino.jpeg" alt="Cappuccino cremoso com arte de leite na superfície, servido em uma xícara temática de gatos." class="grid-img">
+                    <span>Catpuccino</span>
                 </div>
 
                 <div class="grid-item"
-                     onclick="abrirModal('Entrada especial', 'Uma deliciosa combinação especial da casa.', 'R$ 28,00', 'imagens/especial.jpg')">
-                    <img src="imagens/especial.jpg" alt="Entrada especial" class="grid-img">
-                    <span>Entrada especial</span>
+                    onclick="abrirModal('Café com Leite', 'Café expresso misturado com leite vaporizado e uma camada de espuma.', 'R$ 10,00', 'imagens/cardapio/Catfé com Leite.jpeg')">
+                    <img src="imagens/cardapio/Catfé com Leite.jpeg" alt="Café com leite cremoso servido em uma xícara decorada com desenho de gatinho." class="grid-img">
+                    <span>Catfé com Leite</span>
                 </div>
+
+                <div class="grid-item"
+                    onclick="abrirModal('Moccat', 'Uma deliciosa combinação especial da casa.', 'R$ 15,00', 'imagens/cardapio/Moccat.jpeg')">
+                    <img src="imagens/cardapio/Moccat.jpeg" alt="Mocha cremoso preparado com café, leite e chocolate, servido em uma xícara decorada." class="grid-img">
+                    <span>Moccat</span>
+                </div>
+                </div>
+                
+                <h2>Bebidas Frias</h2>
+
+                <div class="grid">
+                    <div class="grid-item"
+                        onclick="abrirModal('Meowshake', 'Milk-shake cremoso de chocolate com calda nas laterais do copo, chantilly, raspas de chocolate e biscoitos de gatinho. Uma explosão de sabor para refrescar seu dia!', 'R$ 15,00', 'imagens/cardapio/Meowshake.jpeg')">
+                        <img src="imagens/cardapio/Meowshake.jpeg" alt="Milk-shake cremoso servido em um copo decorado com tema de gatos e finalizado com chantilly." class="grid-img">
+                        <span>Meowshake</span>
+                    </div>
+
+                    <div class="grid-item"
+                        onclick="abrirModal('Matcha', 'Uma combinação cremosa de chá verde matcha com leite gelado e um toque de doçura. Servido com bastante gelo e finalizado com um biscoitinho de gatinho, é a escolha perfeita para quem busca uma bebida refrescante e cheia de charme! 🐾', 'R$ 16,50', 'imagens/cardapio/matcha.png')">
+                        <img src="imagens/cardapio/matcha.png" alt="Matcha latte gelado com leite, chá verde, cubos de gelo e biscoito em formato de gato, servido em um copo transparente com desenho de gatinho." class="grid-img">
+                        <span>Matcha</span>
+                    </div>
+                    </div>
+                </section>
             </div>
         </section>
     </main>
@@ -87,10 +123,10 @@
                 &times;
             </button>
 
-            <!-- Imagem em cima no pop-up -->
+            <!-- Imagem -->
             <img id="modal-imagem" src="" alt="" class="modal-img">
 
-            <!-- Título em baixo no pop-up -->
+            <!-- Título -->
             <h2 id="modal-titulo"></h2>
 
             <!-- Descrição e Preço -->
@@ -121,5 +157,3 @@
     <footer id="rodape" class="rodape">
         <p> <strong>&copy; 2026 - Isabely Gislaine, Marya Motta, Emily Sequineu, Alexsandro Souza </strong> </p>
     </footer>
-</body>
-</html>
