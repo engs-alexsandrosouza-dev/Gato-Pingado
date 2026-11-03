@@ -97,3 +97,13 @@ button,
     text-decoration: none;
     display: inline-block;
 }
+
+.site-header button{
+    background-color: var(--warm-beige);
+    color: var(--espresso);
+    border-color: var(--cream);
+}
+button:hover,
+.button:hover{
+    filter:brightness(0.92)
+}
