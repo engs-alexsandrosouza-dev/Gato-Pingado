@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gato Pingado</title>
     <link rel="stylesheet" href="cardapio.css">
+    <link rel="stylesheet" href="acessibilidade.css">
 </head>
-<body id="pagina">
+
+<body>
+<script src="acessibilidade.js" defer></script>
+
     <header class="cabecalho" id="inicio">
         <div class="cabecalho-conteudo">
-            <p class="titulo">Cardapio</p>
+            <h1 class="titulo">Cardapio</h1>
             <p class="slogan">as melhores delicias do momento.</p>
         </div>
     </header>
@@ -24,6 +28,15 @@
         <a href="sobre.html">Sobre nós</a>
         <a href="perfil.html">Perfil</a>
     </nav>
+
+    <div class="acessibilidade-botao" aria-label="Ajustes de Acessibilidade">
+            <button type="button"
+            id="diminuir-fonte" aria-label="Diminuir tamanho da fonte">A-</button>
+            <button type="button"
+            id="aumentar-fonte" aria-label="Aumentar tamanho da fonte">A+</button>
+            <button type="button"
+            id="alto-contraste" aria-pressed="false">Alto contraste</button>
+        </div>
 
     <main id="conteudo-principal">
         <section>

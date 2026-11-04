@@ -8,9 +8,11 @@
     <title>Adoção | Gato Pingado</title>
 
     <link rel="stylesheet" href="adoção.css">
+    <link rel="stylesheet" href="acessibilidade.css">
 </head>
 
 <body id="pagina">
+<script src="acessibilidade.js" defer></script>
 
     <!-- CABEÇALHO -->
     <header class="cabecalho" id="inicio">
@@ -45,6 +47,14 @@
 
     </nav>
 
+        <div class="acessibilidade-botao" aria-label="Ajustes de Acessibilidade">
+            <button type="button"
+            id="diminuir-fonte" aria-label="Diminuir tamanho da fonte">A-</button>
+            <button type="button"
+            id="aumentar-fonte" aria-label="Aumentar tamanho da fonte">A+</button>
+            <button type="button"
+            id="alto-contraste" aria-pressed="false">Alto contraste</button>
+        </div>
 
     <main id="conteudo-principal">
 
