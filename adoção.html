@@ -8,15 +8,17 @@
     <title>Adoção | Gato Pingado</title>
 
     <link rel="stylesheet" href="adoção.css">
+    <link rel="stylesheet" href="acessibilidade.css">
 </head>
 
 <body id="pagina">
+<script src="acessibilidade.js" defer></script>
 
     <!-- CABEÇALHO -->
     <header class="cabecalho" id="inicio">
         <div class="cabecalho-conteudo">
 
-            <p class="titulo">Um lar, muitas patinhas e amor de sobra!</p>
+            <h1 class="titulo">Um lar, muitas patinhas e amor de sobra!</h1>
 
             <p class="slogan">
                 Aqui no Gato Pingado, acreditamos que todo gatinho merece
@@ -45,23 +47,18 @@
 
     </nav>
 
+        <div class="acessibilidade-botao" aria-label="Ajustes de Acessibilidade">
+            <button type="button"
+            id="diminuir-fonte" aria-label="Diminuir tamanho da fonte">A-</button>
+            <button type="button"
+            id="aumentar-fonte" aria-label="Aumentar tamanho da fonte">A+</button>
+            <button type="button"
+            id="alto-contraste" aria-pressed="false">Alto contraste</button>
+        </div>
 
     <main id="conteudo-principal">
 
-        <!-- APRESENTAÇÃO -->
-        <section class="introducao">
 
-            <h2>Conheça nossos ronronantes! 🐾</h2>
-
-            <p>
-                Cada gatinho tem sua própria personalidade, seu jeitinho
-                especial e uma história esperando para continuar.
-
-                Eles estão em busca de um lar cheio de carinho, cuidado
-                e respeito. Quem sabe seu novo melhor amigo não está aqui?
-            </p>
-
-        </section>
 
 
         <!-- GATINHOS DISPONÍVEIS -->

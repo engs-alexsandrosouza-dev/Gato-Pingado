@@ -1,0 +1,117 @@
+
+/* BOTÕES DE ACESSIBILIDADE */
+.acessibilidade-botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px;
+}
+
+.acessibilidade-botao button {
+    padding: 9px 14px;
+    border: 2px solid var(--cor-espresso);
+    border-radius: 6px;
+    background: var(--cor-warmBeige);
+    color: var(--cor-espresso);
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.acessibilidade-botao button:hover {
+    background: var(--cor-espresso);
+    color: white;
+}
+
+/* DESTAQUE DE FOCO */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #145A75;
+    outline-offset: 4px;
+}
+
+/* ALTO CONTRASTE */
+body.alto-contraste {
+    background: #000;
+    color: #fff;
+}
+
+body.alto-contraste .grid-item {
+    background: var(--cor-espresso);
+    color: #fff;
+}
+
+body.alto-contraste .acessibilidade-botao {
+    background: #000;
+}
+
+body.alto-contraste .acessibilidade-botao button {
+    background: #ffeb3b;
+    color: #000;
+    border: 2px solid #fff;
+}
+
+body.alto-contraste a {
+    color: #ffeb3b;
+}
+
+body.alto-contraste h1,
+body.alto-contraste h2,
+body.alto-contraste h3,
+body.alto-contraste p,
+body.alto-contraste label,
+body.alto-contraste span {
+    color: #fff;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+    .acessibilidade-botao {
+        padding: 10px;
+        gap: 6px;
+    }
+
+    .acessibilidade-botao button {
+        padding: 8px 11px;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Chrome, Edge, Safari and Opera */
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #fffbf0;
+  border-radius: 0;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #8f513a;
+  border-radius: 30px;
+  min-height: 80px;
+  min-width: 80px;
+  box-shadow: 0 0 6px rgba(245, 158, 11, 0.8);
+}
+*::-webkit-scrollbar-thumb:hover { background-color: #422b23; }
+*::-webkit-scrollbar-thumb:active { background-color: #92400e; }
+
+*::-webkit-scrollbar-corner { background-color: #fffbf0; }
+*::-webkit-scrollbar-button { display: none; }
+
+/* Firefox: apenas uma cor para o polegar e o trilho e uma palavra-chave de largura.
+ Mantido dentro de @supports, porque o Chrome e o Edge 121+ ignoram todas as regras acima assim que scrollbar-color é definido. */
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #8f513a #fffbf0;
+  }
+}

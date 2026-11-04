@@ -7,13 +7,8 @@
     --cor-rust: #8F513A;
 }
 
-* {
-    box-sizing: border-box;
-}
 
-html {
-    scroll-behavior: smooth;
-}
+
 
 body {
     margin: 0;
@@ -21,6 +16,8 @@ body {
     color: var(--cor-espresso);
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
 
 
 /* Cabeçalho */
@@ -398,8 +395,32 @@ section p {
 }
 
 
-/* Responsividade */
+/* RESPONSIVIDADE */
+
 @media (max-width: 650px) {
+
+
+    .menu {
+        flex-wrap: wrap;
+    }
+
+    .grid,
+    .grid-doacoes,
+    .etapas {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-conteudo {
+        max-width: 100%;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .modal-img {
+        height: 190px;
+    }
+
+
 
     .cabecalho-conteudo {
         margin: 0 5px;
@@ -408,28 +429,6 @@ section p {
     .titulo {
         font-size: 1.8rem;
     }
-
-    .menu {
-        gap: 5px;
-    }
-
-    .menu a {
-        font-size: 0.85rem;
-        padding: 7px 9px;
-    }
-
-    .grid,
-
-    .etapas {
-        grid-template-columns: 1fr;
-    }
-
-    .grid-img {
-        height: 220px;
-    }
-
-    .modal-conteudo {
-        padding: 20px;
-    }
+ 
 
 }
