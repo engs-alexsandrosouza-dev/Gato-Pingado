@@ -81,3 +81,37 @@ body.alto-contraste span {
         font-size: 0.9rem;
     }
 }
+
+
+/* Chrome, Edge, Safari and Opera */
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #fffbf0;
+  border-radius: 0;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #8f513a;
+  border-radius: 30px;
+  min-height: 80px;
+  min-width: 80px;
+  box-shadow: 0 0 6px rgba(245, 158, 11, 0.8);
+}
+*::-webkit-scrollbar-thumb:hover { background-color: #422b23; }
+*::-webkit-scrollbar-thumb:active { background-color: #92400e; }
+
+*::-webkit-scrollbar-corner { background-color: #fffbf0; }
+*::-webkit-scrollbar-button { display: none; }
+
+/* Firefox: apenas uma cor para o polegar e o trilho e uma palavra-chave de largura.
+ Mantido dentro de @supports, porque o Chrome e o Edge 121+ ignoram todas as regras acima assim que scrollbar-color é definido. */
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #8f513a #fffbf0;
+  }
+}
