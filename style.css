@@ -273,7 +273,7 @@ padding: 1rem;
  margin: 0;
 }
 
-body.high-contrast {
+body.alto-contraste {
     --cream: #FFFFFF;
     --warm-beige: #FFFFFF;
     --caramel: #FFFF00;
@@ -282,24 +282,24 @@ body.high-contrast {
     --background: #FFFFFF;
     --card-background: #FFFFFF;
 }
-body.high-contrast .info-card,
-body.high-contrast .historia-card,
-body.high-contrast .behavior-list article {
+body.alto-contraste .info-card,
+body.alto-contraste .historia-card,
+body.alto-contraste .behavior-list article {
     border: 2px solid #000000;
 }
 
-body.high-contrast .site-header,
-body.high-contrast .site-footer {
+body.alto-contraste .site-header,
+body.alto-contraste .site-footer {
     background-color: #000000;
     color: #FFFFFF;
 }
-body.high-contrast .site-header button {
+body.alto-contraste .site-header button {
     background-color: #FFFFFF;
     color: #000000;
     border-color: #FFFFFF;
 }
 
-body.high-contrast .button-secondary {
+body.alto-contraste .button-secondary {
  background-color: #000000;
  color: #FFFFFF;
 border-color: #FFFFFF;
@@ -400,4 +400,64 @@ transition-duration: 0.01ms !important;
     display: block;
     width: fit-content;
     margin: 20px auto 0;
+}
+/* ===== ALTO CONTRASTE ===== */
+
+body.alto-contraste {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+/* Textos */
+body.alto-contraste h1,
+body.alto-contraste h2,
+body.alto-contraste h3,
+body.alto-contraste p,
+body.alto-contraste span,
+body.alto-contraste li,
+body.alto-contraste label {
+    color: #FFFFFF !important;
+}
+
+/* Fundos das seções e cartões */
+body.alto-contraste .cat,
+body.alto-contraste .content-section,
+body.alto-contraste .historia-card,
+body.alto-contraste .info-card,
+body.alto-contraste .behavior-list article,
+body.alto-contraste .cta-section {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    border: 2px solid #FFFFFF !important;
+}
+
+/* Cabeçalho e rodapé */
+body.alto-contraste .site-header,
+body.alto-contraste .site-footer {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    border-bottom: 2px solid #FFFFFF !important;
+}
+
+/* Links */
+body.alto-contraste a {
+    color: #FFFF00 !important;
+}
+
+/* Botões */
+body.alto-contraste button,
+body.alto-contraste .button {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    border: 2px solid #FFFF00 !important;
+}
+
+/* Ícones */
+body.alto-contraste .card-icon {
+    color: #FFFF00 !important;
+}
+
+/* Textos destacados */
+body.alto-contraste .bigode {
+    color: #FFFF00 !important;
 }
