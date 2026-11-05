@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adoção | Gato Pingado</title>
+
+    <link rel="stylesheet" href="adoção.css">
+    <link rel="stylesheet" href="acessibilidade.css">
+</head>
+
+<body id="pagina">
+<script src="acessibilidade.js" defer></script>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho" id="inicio">
+        <div class="cabecalho-conteudo">
+
+            <h1 class="titulo">Um lar, muitas patinhas e amor de sobra!</h1>
+
+            <p class="slogan">
+                Aqui no Gato Pingado, acreditamos que todo gatinho merece
+                uma família para chamar de sua. Conheça nossos pequenos
+                moradores e encontre um novo companheiro para compartilhar
+                momentos especiais.
+            </p>
+
+            <a href="#gatinhos" class="botao">Conheça nossos gatinhos</a>
+
+        </div>
+    </header>
+
+
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav class="menu">
+
+        <a href="index.html">Início</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="gatos.html">Os gatos</a>
+        <a href="adoção.html">Adoção</a>
+        <a href="loja.html">Loja</a>
+        <a href="redes.html">Nossas redes</a>
+        <a href="sobre-nos.html">Sobre nós</a>
+        <a href="perfil.html">Perfil</a>
+
+    </nav>
+
+        <div class="acessibilidade-botao" aria-label="Ajustes de Acessibilidade">
+            <button type="button"
+            id="diminuir-fonte" aria-label="Diminuir tamanho da fonte">A-</button>
+            <button type="button"
+            id="aumentar-fonte" aria-label="Aumentar tamanho da fonte">A+</button>
+            <button type="button"
+            id="alto-contraste" aria-pressed="false">Alto contraste</button>
+        </div>
+
+    <main id="conteudo-principal">
+
+
+
+
+        <!-- GATINHOS DISPONÍVEIS -->
+        <section id="gatinhos" class="secao-gatos">
+
+            <h2>Gatinhos para adoção</h2>
+
+            <div class="grid">
+
+                <!-- NUVEM -->
+                <div class="grid-item"
+                    onclick="abrirModal(
+                    'Nuvem',
+                    'Um gatinho cinza de olhar encantador! Nuvem é curioso e adora explorar novos ambientes. Procura uma família que tenha tempo para brincar com ele e oferecer muito carinho.',
+                    '1 ano',
+                    'Curioso, carinhoso e brincalhão.',
+                    'imagens/gatos/cinza.jpg'
+                    )">
+
+                    <img src="imagens/gatos/cinza.jpg"
+                        alt="Gatinho de pelagem cinza e olhos âmbar sentado em uma mesa."
+                        class="grid-img">
+
+                    <h3>Nuvem</h3>
+                    <p>O especialista em conquistar corações!</p>
+
+                    <span class="status">Disponível para adoção</span>
+
+                    <button type="button" class="botao-card">
+                        Conheça o Nuvem
+                    </button>
+
+                </div>
+
+
+                <!-- SIMBA -->
+                <div class="grid-item"
+                    onclick="abrirModal(
+                    'Simba',
+                    'Um charmoso gatinho laranja que parece carregar um pouquinho do sol na pelagem. Simba tem um jeitinho especial e procura uma família que queira compartilhar momentos de carinho e tranquilidade.',
+                    '2 anos',
+                    'Sociável, tranquilo e companheiro.',
+                    'imagens/gatos/laranjinha.jpg'
+                    )">
+
+                    <img src="imagens/gatos/laranjinha.jpg"
+                        alt="Gatinho laranja de pelagem rajada sentado em uma mesa."
+                        class="grid-img">
+
+                    <h3>Simba</h3>
+                    <p>Um raio de sol esperando por um lar!</p>
+
+                    <span class="status">Disponível para adoção</span>
+
+                    <button type="button" class="botao-card">
+                        Conheça o Simba
+                    </button>
+
+                </div>
+
+
+                <!-- MINGAU -->
+                <div class="grid-item"
+                    onclick="abrirModal(
+                    'Mingau',
+                    'Um gatinho rajado de olhar expressivo e orelhinhas atentas. Mingau é curioso e adora descobrir novidades. Procura um lar seguro, com brinquedos e muito carinho.',
+                    '8 meses',
+                    'Curioso, observador e aventureiro.',
+                    'imagens/gatos/listradin.jpg'
+                    )">
+
+                    <img src="imagens/gatos/listradin.jpg"
+                        alt="Gatinho de pelagem cinza rajada, com listras escuras."
+                        class="grid-img">
+
+                    <h3>Mingau</h3>
+                    <p>Pequeno no tamanho, gigante na fofura!</p>
+
+                    <span class="status">Disponível para adoção</span>
+
+                    <button type="button" class="botao-card">
+                        Conheça o Mingau
+                    </button>
+
+                </div>
+
+
+                <!-- CAFÉ -->
+                <div class="grid-item"
+                    onclick="abrirModal(
+                    'Café',
+                    'Com seus olhos azuis marcantes e sua pelagem em tons de creme e marrom, Café tem um charme todo especial. Procura uma família que respeite seu ritmo e ofereça atenção e segurança.',
+                    '1 ano e meio',
+                    'Observador, curioso e companheiro.',
+                    'imagens/gatos/marorm%20e%20brancofofo.jpg'
+                    )">
+
+                    <img src="imagens/gatos/marorm%20e%20brancofofo.jpg"
+                        alt="Gatinho siamês de pelagem clara, extremidades marrons e olhos azuis."
+                        class="grid-img">
+
+                    <h3>Café</h3>
+                    <p>Uma companhia especial para qualquer momento!</p>
+
+                    <span class="status">Disponível para adoção</span>
+
+                    <button type="button" class="botao-card">
+                        Conheça o Café
+                    </button>
+
+                </div>
+
+
+                <!-- FLOQUINHO -->
+                <div class="grid-item"
+                    onclick="abrirModal(
+                    'Floquinho',
+                    'Um gatinho de pelagem branca e fofinha, com uma aparência delicada. Floquinho merece uma família que cuide dele com paciência, respeito e muito amor.',
+                    '3 anos',
+                    'Delicado, sereno e tranquilo.',
+                    'imagens/gatos/persabranco.jpg'
+                    )">
+
+                    <img src="imagens/gatos/persabranco.jpg"
+                        alt="Gatinho branco de pelos longos e volumosos descansando em uma cadeira."
+                        class="grid-img">
+
+                    <h3>Floquinho</h3>
+                    <p>Um abraço em forma de gatinho!</p>
+
+                    <span class="status">Disponível para adoção</span>
+
+                    <button type="button" class="botao-card">
+                        Conheça o Floquinho
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMO ADOTAR -->
+        <section class="como-adotar" id="como-adotar">
+
+            <h2>Como funciona a adoção? </h2>
+
+            <p class="texto-secao">
+                Adotar é um compromisso de amor e responsabilidade.
+                Queremos garantir que nossos gatinhos encontrem famílias
+                preparadas para cuidar deles.
+            </p>
+
+            <div class="etapas">
+
+                <div class="etapa">
+                    <span>🐱</span>
+                    <h3>1. Escolha seu amigo</h3>
+                    <p>
+                        Conheça nossos gatinhos e descubra qual combina
+                        com você.
+                    </p>
+                </div>
+
+                <div class="etapa">
+                    <span>📝</span>
+                    <h3>2. Preencha o formulário</h3>
+                    <p>
+                        Conte um pouquinho sobre você, sua rotina
+                        e seu lar.
+                    </p>
+                </div>
+
+                <div class="etapa">
+                    <span>💬</span>
+                    <h3>3. Converse conosco</h3>
+                    <p>
+                        Nossa equipe entrará em contato para orientar
+                        sobre o processo de adoção.
+                    </p>
+                </div>
+
+                <div class="etapa">
+                    <span>❤️</span>
+                    <h3>4. Prepare seu lar!</h3>
+                    <p>
+                        Com tudo organizado, começa uma nova história
+                        cheia de carinho.
+                    </p>
+                </div>
+
+            </div>
+
+            <a href="#formulario" class="botao">
+                Quero adotar!
+            </a>
+
+        </section>
+
+
+        <!-- ÁREA DE DOAÇÕES -->
+        <section class="doacoes" id="doacoes">
+
+
+            <p class="texto-secao">
+
+                Nossos gatinhos precisam de alimentação, higiene,
+                cuidados e diversão. Sua contribuição faz a diferença
+                no dia a dia dos nossos moradores.
+            </p>
+
+
+         <div class="grid-doacoes">
+
+    <div class="doacao-card">
+        <h3>Ração e sachês</h3>
+        <p>
+            Alimentos para manter nossos gatinhos
+            bem alimentados e saudáveis.
+        </p>
+    </div>
+
+    <div class="doacao-card">
+        <h3>Brinquedos</h3>
+        <p>
+            Bolinhas, arranhadores e brinquedos
+            para diversão dos nossos pequenos.
+        </p>
+    </div>
+
+    <div class="doacao-card">
+        <h3>Produtos de higiene</h3>
+        <p>
+            Areia sanitária e produtos adequados
+            para manter o ambiente limpo.
+        </p>
+    </div>
+
+    <div class="doacao-card">
+        <h3>Cuidados veterinários</h3>
+        <p>
+            Ajude com despesas de consultas,
+            vacinas e tratamentos veterinários.
+        </p>
+    </div>
+
+</div>
+
+
+
+
+        </section>
+
+
+
+        <!-- FORMULÁRIO DE ADOÇÃO -->
+        <section class="formulario-adocao" id="formulario">
+
+            <h2>Seu novo melhor amigo está esperando por você! </h2>
+
+            <p>
+                Gostou de algum dos nossos gatinhos?
+                Preencha o formulário e dê o primeiro passo.
+            </p>
+
+            <form id="form-adocao">
+
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome"
+                    placeholder="Digite seu nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email"
+                    placeholder="Digite seu e-mail" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone"
+                    placeholder="(00) 00000-0000" required>
+
+                <label for="gatinho">Qual gatinho deseja adotar?</label>
+                <select id="gatinho" name="gatinho" required>
+
+                    <option value="">Selecione um gatinho</option>
+                    <option value="Nuvem">Nuvem</option>
+                    <option value="Simba">Simba</option>
+                    <option value="Mingau">Mingau</option>
+                    <option value="Café">Café</option>
+                    <option value="Floquinho">Floquinho</option>
+
+                </select>
+
+                <label for="animais">Você já possui outros animais?</label>
+                <select id="animais" name="animais" required>
+
+                    <option value="">Selecione uma opção</option>
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+
+                </select>
+
+                <label for="moradia">Como é o ambiente onde o gatinho vai morar?</label>
+                <textarea id="moradia" name="moradia"
+                    placeholder="Conte um pouco sobre sua casa..."
+                    rows="4" required></textarea>
+
+                <label for="motivo">Por que deseja adotar?</label>
+                <textarea id="motivo" name="motivo"
+                    placeholder="Conte um pouquinho sobre sua motivação..."
+                    rows="4" required></textarea>
+
+                <button type="submit" class="botao">
+                    Enviar
+                </button>
+
+            </form>
+
+            <p id="mensagem-formulario"></p>
+
+        </section>
+
+
+        <!-- CONTATO -->
+        <section class="contato" id="contato">
+
+            <h2>Quer ajudar?</h2>
+
+            <p>
+                Para saber mais sobre adoção ou doações,
+                entre em contato com nossa equipe
+            </p>
+
+            <a href="redes.html" class="botao">
+                Entre em contato
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- MODAL DOS GATINHOS -->
+    <div id="modal" class="modal"
+        aria-hidden="true"
+        onclick="fecharModalFora(event)">
+
+        <div class="modal-conteudo"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-titulo">
+
+            <button class="fechar"
+                onclick="fecharModal()"
+                aria-label="Fechar janela">
+                &times;
+            </button>
+
+            <img id="modal-imagem" src="" alt="" class="modal-img">
+
+            <h2 id="modal-titulo"></h2>
+
+            <p id="modal-descricao"></p>
+
+            <p id="modal-idade"></p>
+
+            <p id="modal-personalidade"></p>
+
+            <a href="#formulario"
+                class="botao"
+                onclick="fecharModal()">
+                Quero adotar!
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        // Abre a janela com as informações do gatinho
+        function abrirModal(nome, descricao, idade, personalidade, imagem) {
+
+            document.getElementById("modal-titulo").textContent = nome;
+            document.getElementById("modal-descricao").textContent = descricao;
+            document.getElementById("modal-idade").textContent = "Idade: " + idade;
+
+            document.getElementById("modal-personalidade").textContent =
+                "Personalidade: " + personalidade;
+
+            const imgElement = document.getElementById("modal-imagem");
+
+            imgElement.src = imagem;
+            imgElement.alt = "Foto do gatinho " + nome;
+
+            const modal = document.getElementById("modal");
+
+            modal.style.display = "flex";
+            modal.setAttribute("aria-hidden", "false");
+
+        }
+
+
+        // Fecha a janela
+        function fecharModal() {
+
+            const modal = document.getElementById("modal");
+
+            modal.style.display = "none";
+            modal.setAttribute("aria-hidden", "true");
+
+        }
+
+
+        // Fecha o modal ao clicar fora do conteúdo
+        function fecharModalFora(event) {
+
+            if (event.target.id === "modal") {
+                fecharModal();
+            }
+
+        }
+
+
+        // Fecha o modal utilizando a tecla ESC
+        document.addEventListener("keydown", function(event) {
+
+            if (event.key === "Escape") {
+                fecharModal();
+            }
+
+        });
+
+
+        // Exemplo de envio do formulário
+        document.getElementById("form-adocao").addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            document.getElementById("mensagem-formulario").textContent =
+                "Interesse registrado na demonstração! Entre em contato com nossa equipe para continuar o processo de adoção. ❤️";
+
+            this.reset();
+
+        });
+
+    </script>
+
+
+    <!-- RODAPÉ -->
+    <footer id="rodape" class="rodape">
+
+        <p>
+            <strong>
+                &copy; 2026 - Isabely Gislaine, Marya Motta, Emily Sequineu e Alexsandro Souza
+            </strong>
+        </p>
+
+
+    </footer>
+
+</body>
+</html>

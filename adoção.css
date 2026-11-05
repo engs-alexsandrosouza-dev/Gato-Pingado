@@ -1,0 +1,436 @@
+/* Estilos gerais */
+:root {
+    --cor-caramel: #A87756;
+    --cor-warmBeige: #D6BAA2;
+    --cor-cream: #F0E0C7;
+    --cor-espresso: #422B23;
+    --cor-rust: #8F513A;
+}
+
+
+body {
+    margin: 0;
+    background: var(--cor-cream);
+    color: var(--cor-espresso);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* Cabeçalho */
+.cabecalho {
+    background: var(--cor-caramel);
+    color: white;
+    padding: 28px 20px 30px 20px;
+    text-align: center;
+}
+
+.cabecalho-conteudo {
+    margin: 0 30px;
+}
+
+.titulo {
+    margin-top: 6px;
+    font-size: 2.3rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    font-family: isometra, sans-serif;
+}
+
+.slogan {
+    margin: 20px 0 18px;
+    color: var(--cor-cream);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+
+/* Menu */
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px 16px;
+    background: var(--cor-espresso);
+}
+
+.menu a {
+    padding: 7px 13px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.menu a:hover {
+    background: var(--cor-warmBeige);
+    color: var(--cor-espresso);
+    text-decoration: underline;
+}
+
+
+/* Conteúdo principal */
+#conteudo-principal {
+    width: min(100% - 32px, 900px);
+    margin: 30px auto;
+}
+
+section {
+    margin-bottom: 45px;
+}
+
+section h2 {
+    color: var(--cor-rust);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+.introducao {
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 35px;
+}
+
+
+/* Grid dos gatos */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    padding: 16px;
+    border: 3px solid var(--cor-rust);
+    border-radius: 8px;
+    background: var(--cor-warmBeige);
+    color: var(--cor-espresso);
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    overflow: hidden;
+}
+
+.grid-item:hover {
+    transform: scale(1.02);
+}
+
+.grid-img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid var(--cor-rust);
+}
+
+.grid-item h3 {
+    margin: 5px 0 0;
+    color: var(--cor-rust);
+    font-size: 1.3rem;
+}
+
+.grid-item p {
+    margin: 0;
+}
+
+.status {
+    color: var(--cor-rust);
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+
+/* Botões */
+.botao,
+.botao-card {
+    display: inline-block;
+    padding: 10px 16px;
+    background: var(--cor-rust);
+    color: white;
+    border: 2px solid var(--cor-espresso);
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.botao:hover,
+.botao-card:hover {
+    background: var(--cor-espresso);
+    transform: scale(1.02);
+}
+
+
+/* Como adotar */
+.como-adotar {
+    padding: 25px;
+    background: var(--cor-warmBeige);
+    border: 3px solid var(--cor-rust);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.texto-secao {
+    max-width: 750px;
+    margin: 0 auto 25px;
+    text-align: center;
+}
+
+.etapas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.etapa {
+    padding: 18px;
+    background: var(--cor-cream);
+    border: 2px solid var(--cor-rust);
+    border-radius: 8px;
+}
+
+.etapa span {
+    font-size: 2rem;
+}
+
+.etapa h3 {
+    color: var(--cor-rust);
+}
+
+
+/* Área de doações - Modelo visual estruturado */
+.doacoes {
+    text-align: center;
+}
+
+.grid-doacoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 25px 0;
+}
+
+.doacao-card {
+    background: var(--cor-warmBeige);
+
+    border-radius: 8px;
+    padding: 22px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.doacao-card h3 {
+    margin: 4px 0 0;
+    color: var(--cor-rust);
+    font-size: 1.25rem;
+}
+
+.doacao-card p {
+    margin: 0;
+    line-height: 1.5;
+    color: var(--cor-espresso);
+}
+
+
+
+
+
+/* Formulário */
+.formulario-adocao {
+    max-width: 650px;
+    margin: auto;
+}
+
+.formulario-adocao > p {
+    text-align: center;
+}
+
+.formulario-adocao form {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background: var(--cor-warmBeige);
+    border: 3px solid var(--cor-rust);
+    border-radius: 8px;
+}
+
+.formulario-adocao label {
+    margin: 12px 0 5px;
+    font-weight: bold;
+}
+
+.formulario-adocao input,
+.formulario-adocao select,
+.formulario-adocao textarea {
+    width: 100%;
+    padding: 11px;
+    background: var(--cor-cream);
+    color: var(--cor-espresso);
+    border: 2px solid var(--cor-rust);
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.formulario-adocao input:focus,
+.formulario-adocao select:focus,
+.formulario-adocao textarea:focus {
+    outline: 2px solid var(--cor-espresso);
+    outline-offset: 2px;
+}
+
+.formulario-adocao textarea {
+    resize: vertical;
+}
+
+.formulario-adocao button {
+    margin-top: 20px;
+}
+
+#mensagem-formulario {
+    text-align: center;
+    font-weight: bold;
+    color: var(--cor-rust);
+}
+
+
+/* Contato */
+.contato {
+    padding: 25px;
+    background: var(--cor-warmBeige);
+    border: 3px solid var(--cor-rust);
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Caixa de informações */
+.modal-conteudo {
+    background-color: var(--cor-cream);
+    color: var(--cor-espresso);
+    width: 100%;
+    max-width: 450px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 30px;
+    border-radius: 12px;
+    position: relative;
+    border: 3px solid var(--cor-rust);
+    text-align: center;
+}
+
+/* Imagem no modal */
+.modal-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 2px solid var(--cor-rust);
+}
+
+/* Título do modal */
+.modal-conteudo h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-right: 25px;
+    color: var(--cor-rust);
+}
+
+/* Botão X */
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    color: var(--cor-espresso);
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.fechar:hover {
+    color: var(--cor-rust);
+}
+
+
+/* Rodapé */
+.rodape {
+    padding: 18px;
+    background: var(--cor-caramel);
+    color: var(--cor-warmBeige);
+    text-align: center;
+}
+
+.rodape p {
+    margin: 5px 0;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 650px) {
+
+
+    .menu {
+        flex-wrap: wrap;
+    }
+
+    .grid,
+    .grid-doacoes,
+    .etapas {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-conteudo {
+        max-width: 100%;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .modal-img {
+        height: 190px;
+    }
+
+
+
+    .cabecalho-conteudo {
+        margin: 0 5px;
+    }
+
+    .titulo {
+        font-size: 1.8rem;
+    }
+ 
+
+}

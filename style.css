@@ -1,0 +1,463 @@
+/* css COMPARTILHADO QUE CRIEI PARA AS PAGINAS GATOS E SOBRE NÓS - EMILY */
+
+:root{
+    --caramel: #E6C9A8;
+    --warm-beige: #E6C9A8;
+    --cream: #FFF1D6;
+    --espresso: #8F513A;
+
+    --text: #3B2924;
+--background: #FFF1D6;
+--card-background: #FFFFFF;
+
+    --font-scale: 1;
+}
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth; 
+}
+
+body{
+    margin: 0;
+    background-color: var(--cream);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+h1{
+    font-size: 2rem;
+}
+a{
+    color: inherit;
+}
+a:hover{
+    text-decoration-thickness: 2px;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #1B5E75;
+    outline-offset: 4px;
+}
+
+.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem 3rem;
+    background-color: var(--espresso);
+    color: var(--cream);
+}
+
+.logo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.site-header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+
+.site-header nav a {
+    text-decoration: none;
+    padding: 0.3rem;
+}
+
+.site-header nav a[aria-current="page"] {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+    font-weight: bold;
+}
+
+.acessibilidade-botao{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+button,
+.button{
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid var(--espresso);
+    border-radius: 0.5rem;
+    padding: 0.7rem 1rem;
+    background-color: var(--cream);
+    color: var(--espresso);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.site-header button{
+    background-color: var(--warm-beige);
+    color: var(--espresso);
+    border-color: var(--cream);
+}
+button:hover,
+.button:hover{
+    filter:brightness(0.92)
+}
+
+.cat{
+    text-align: center;
+    padding: 5rem 1.5rem;
+    background-color: var(--warm-beige);
+}
+   .cat h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    margin: 1.5rem 0;
+}
+
+.cat p{
+    max-width: 700px;
+    margin: 1rem auto 1.5rem;
+}
+.bigode{
+    text-transform: uppercase;
+    letter-spacing: 0.12rem;
+    font-weight: bold;
+}
+
+.content-section{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+}
+
+.section-heading{
+     margin-bottom: 2rem;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(1.8rem, 2.5vw, 2.2rem);
+    margin: 0.5rem 0;
+}
+
+.historia-card{
+    background-color: var(--card-background);
+    border-left: 0.5rem solid var(--caramel);
+    border-radius: 0.7rem;
+    padding: 2rem;
+}
+
+.historia-card p {
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+}
+.info-card{
+    background-color: var(--card-background);
+    border: 2px solid var(var(--warm-beige));
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+    transition: transform 0.2s ease;
+}
+
+.card-icon {
+    font-size: 2.2rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+.info-card h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.info-card p{
+    margin-bottom: 0;
+}
+
+.adoption-banner h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    max-width: 900px;
+    margin: 0 auto 1rem;
+}
+
+.adoption-banner p{
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+}
+
+.cat-small h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    margin: 0.5rem 0 1rem;
+}
+.behavior-list{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.behavior-list article{
+    background-color: var(--card-background);
+    border: 2px solid var(--warm-beige);
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+}
+
+.behavior-list h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    margin-top: 0;
+}
+.behavior-list p{
+    margin-bottom: 0;
+}
+.do-dont .good {
+    border-top: 0.5rem solid #572e24;
+}
+.do-dont .avoid  {
+    border-top: 0.5rem solid #572e24;
+}
+.info-card ul {
+    padding-left: 1.5rem;
+    margin-bottom: 0;
+}
+.info-card li {
+    margin: 0.6rem 0;
+}
+.cta-section {
+    text-align: center;
+    background-color: var(--caramel);
+    padding: 4rem 1.5rem;
+}
+.cta-section h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+    margin: 0.5rem 0;
+}
+.cta-section p {
+    max-width: 700px;
+    margin: 1rem auto 1rem;
+}
+.button-secondary {
+    background-color: var(--espresso);
+    color: var(--cream);
+    border-color: var(--espresso);
+}
+.site-footer {
+text-align: center;
+background-color: var(--espresso);
+color: var(--cream);
+padding: 1rem;
+}
+.site-footer p {
+ margin: 0;
+}
+
+body.alto-contraste {
+    --cream: #FFFFFF;
+    --warm-beige: #FFFFFF;
+    --caramel: #FFFF00;
+    --espresso: #000000;
+    --text: #000000;
+    --background: #FFFFFF;
+    --card-background: #FFFFFF;
+}
+body.alto-contraste .info-card,
+body.alto-contraste .historia-card,
+body.alto-contraste .behavior-list article {
+    border: 2px solid #000000;
+}
+
+body.alto-contraste .site-header,
+body.alto-contraste .site-footer {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+body.alto-contraste .site-header button {
+    background-color: #FFFFFF;
+    color: #000000;
+    border-color: #FFFFFF;
+}
+
+body.alto-contraste .button-secondary {
+ background-color: #000000;
+ color: #FFFFFF;
+border-color: #FFFFFF;
+}
+
+/* RESPONSIVIDADE*/
+/* TABLETS */
+
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .site-header nav {
+        justify-content: center;
+    }
+
+    .acessibilidade-botao {
+        justify-content: center;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    .do-dont .cards {
+    grid-template-columns: 1fr;
+}
+.behavior-list {
+     grid-template-columns: 1fr;
+}
+}
+/*CELULARES*/
+
+@media (max-width: 480px) {
+    .site-header nav {
+        gap: 0.6rem;
+    }
+    .site-header nav a {
+        font-size: 0.9rem;
+    }
+
+    button,
+    .button {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.95rem;
+    }
+    .content-section {
+        padding: 2.5rem 1rem;
+    }
+    .historia-card {
+     padding: 1.2rem;
+ }
+}
+
+   /*PREFERÊNCIA POR MOVIMENTO REDUZIDO*/
+@media (prefers-reduced-motion: reduce) {
+    html {
+    scroll-behavior: auto;
+    }
+
+*,
+*::before,
+*::after {
+ animation-duration: 0.01ms !important;
+transition-duration: 0.01ms !important;
+    }
+}
+
+/* CENTRALIZAR A SEÇÃO DE ADOÇÃO */
+.adoption-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px 20px;
+}
+
+/* CENTRALIZAR O TÍTULO */
+.adoption-banner h1 {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 20px;
+}
+
+/* CENTRALIZAR O TEXTO */
+.adoption-banner p {
+    text-align: center;
+    margin: 0 auto 20px;
+}
+
+/* CENTRALIZAR O BOTÃO */
+.adoption-banner .button {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+}
+/* ===== ALTO CONTRASTE ===== */
+
+body.alto-contraste {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+/* Textos */
+body.alto-contraste h1,
+body.alto-contraste h2,
+body.alto-contraste h3,
+body.alto-contraste p,
+body.alto-contraste span,
+body.alto-contraste li,
+body.alto-contraste label {
+    color: #FFFFFF !important;
+}
+
+/* Fundos das seções e cartões */
+body.alto-contraste .cat,
+body.alto-contraste .content-section,
+body.alto-contraste .historia-card,
+body.alto-contraste .info-card,
+body.alto-contraste .behavior-list article,
+body.alto-contraste .cta-section {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    border: 2px solid #FFFFFF !important;
+}
+
+/* Cabeçalho e rodapé */
+body.alto-contraste .site-header,
+body.alto-contraste .site-footer {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    border-bottom: 2px solid #FFFFFF !important;
+}
+
+/* Links */
+body.alto-contraste a {
+    color: #FFFF00 !important;
+}
+
+/* Botões */
+body.alto-contraste button,
+body.alto-contraste .button {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    border: 2px solid #FFFF00 !important;
+}
+
+/* Ícones */
+body.alto-contraste .card-icon {
+    color: #FFFF00 !important;
+}
+
+/* Textos destacados */
+body.alto-contraste .bigode {
+    color: #FFFF00 !important;
+}
