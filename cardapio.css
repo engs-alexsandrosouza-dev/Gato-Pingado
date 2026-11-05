@@ -63,6 +63,26 @@ body {
     text-decoration: underline;
 }
 
+#foto-perfil {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    width: 65px;
+    height: 65px;
+}
+
+
+#foto-perfil img {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--cor-cream);
+    box-sizing: border-box;
+}
 /* Conteúdo */
 #conteudo-principal {
     width: min(100% - 32px, 900px);

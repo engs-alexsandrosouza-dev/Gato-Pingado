@@ -69,6 +69,25 @@ body.alto-contraste span {
     color: #fff;
 }
 
+
+body.alto-contraste .formulario-adocao input,
+body.alto-contraste .formulario-adocao select,
+body.alto-contraste .formulario-adocao textarea,
+body.alto-contraste .etapas,
+body.alto-contraste .contato,
+body.alto-contraste .modal-conteudo,
+body.alto-contraste .formulario-adocao form,
+body.alto-contraste .doacao-card,
+body.alto-contraste .grid-item,
+body.alto-contraste .etapa, 
+body.alto-contraste .como-adotar { 
+    background: var(--cor-espresso);
+}
+body.alto-contraste .fechar{
+    background-color: var(--cor-cream);
+}
+
+
 /* RESPONSIVIDADE */
 @media (max-width: 600px) {
     .acessibilidade-botao {
@@ -85,13 +104,12 @@ body.alto-contraste span {
 
 /* Chrome, Edge, Safari and Opera */
 *::-webkit-scrollbar {
-  width: 12px;
+  width: 18px;
   height: 12px;
 }
 
 *::-webkit-scrollbar-track {
   background-color: #fffbf0;
-  border-radius: 0;
 }
 
 *::-webkit-scrollbar-thumb {
@@ -99,13 +117,11 @@ body.alto-contraste span {
   border-radius: 30px;
   min-height: 80px;
   min-width: 80px;
-  box-shadow: 0 0 6px rgba(245, 158, 11, 0.8);
+
 }
 *::-webkit-scrollbar-thumb:hover { background-color: #422b23; }
 *::-webkit-scrollbar-thumb:active { background-color: #92400e; }
 
-*::-webkit-scrollbar-corner { background-color: #fffbf0; }
-*::-webkit-scrollbar-button { display: none; }
 
 /* Firefox: apenas uma cor para o polegar e o trilho e uma palavra-chave de largura.
  Mantido dentro de @supports, porque o Chrome e o Edge 121+ ignoram todas as regras acima assim que scrollbar-color é definido. */
