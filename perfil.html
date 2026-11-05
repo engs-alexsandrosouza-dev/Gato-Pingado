@@ -7,10 +7,7 @@
     <link rel="stylesheet" href="perfil.css">
 </head>
 <body id="pagina">
-    <header class="cabecalho" id="inicio">
-        <div id="foto-perfil">
-            <img src="imagens/Nova pasta/Logo-Perfil.jpg">
-        </div>
+
         <div class="cabecalho-conteudo">
             <p class="titulo">Seja bem-vindo!</p>
             <h3 class="slogan">Esse é seu cantinho favorito!</h3>
@@ -26,10 +23,78 @@
         <a href="cardapio.html">Cardapio</a>
     </nav>
 
-    <section id="conteudo-perfil">
-        <article class="perfil">
-            <h2>Perfil do usuário</h2>
+
+
+<main id="conteudo-principal">
+
+    <h2 class="titulo-secao">Sua história com a Gato-Pingado!</h2>
+
+    <section class="carrossel">
+
+        <!-- BEBIDA MAIS PEDIDA -->
+        <div class="slide ativo">
+            <img src="imagens/Nova pasta/bebida.webp" alt="Miaukshake">
+
+            <div class="info-slide">
+                <h2>Sua bebida mais pedida</h2>
+                <h3>Miaukshake</h3>
+                <p>6 vezes na sua comanda!</p>
+            </div>
+        </div>
+
+        <!-- ÚLTIMO PEDIDO -->
+        <div class="slide">
+            <img src="imagens/Nova pasta/miaucaroons.jpg" alt="Último pedido">
+
+            <div class="info-slide">
+                <h2>Seu último pedido</h2>
+                <h3>Miaucaroons</h3>
+                <p>Uma escolha deliciosa!</p>
+            </div>
+        </div>
+
+        <!-- GATINHO FAVORITO -->
+        <div class="slide">
+            <img src="imagens/Nova pasta/gato.jpg" alt="Gatinho favorito">
+
+            <div class="info-slide">
+                <h2>Seu gatinho favorito</h2>
+                <h3>Milkshake</h3>
+                <p>Seu amigo especial no Gato Pingado!</p>
+            </div>
+        </div>
+
+        <!-- Combo favorito -->
+        <div class="slide">
+            <img src="imagens/Nova pasta/gato.jpg" alt="Gatinho favorito">
+
+            <div class="info-slide">
+                <h2>Seu combo favorito</h2>
+                <h3>Milkshake</h3>
+                <p>Seu amigo especial no Gato Pingado!</p>
+            </div>
+        </div>
+
+
+            <!-- SETA ESQUERDA -->
+        <button type="button"
+            class="anterior"
+            aria-label="Imagem anterior">
+            &#10094;
+        </button>
+
+            <!-- SETA DIREITA -->
+        <button type="button"
+            class="proximo"
+            aria-label="Próxima imagem">
+            &#10095;
+        </button>
+
     </section>
+</main>
+
+<script src="carrossel.js" defer></script>
+
 
     <footer id="rodape" class="rodape">
         <p> <strong>&copy; 2026 - Isabely Gislaine, Marya Motta, Emily Sequineu, Alexsandro Souza </strong> </p>
