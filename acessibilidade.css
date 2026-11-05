@@ -69,6 +69,25 @@ body.alto-contraste span {
     color: #fff;
 }
 
+
+body.alto-contraste .formulario-adocao input,
+body.alto-contraste .formulario-adocao select,
+body.alto-contraste .formulario-adocao textarea,
+body.alto-contraste .etapas,
+body.alto-contraste .contato,
+body.alto-contraste .modal-conteudo,
+body.alto-contraste .formulario-adocao form,
+body.alto-contraste .doacao-card,
+body.alto-contraste .grid-item,
+body.alto-contraste .etapa, 
+body.alto-contraste .como-adotar { 
+    background: var(--cor-espresso);
+}
+body.alto-contraste .fechar{
+    background-color: var(--cor-cream);
+}
+
+
 /* RESPONSIVIDADE */
 @media (max-width: 600px) {
     .acessibilidade-botao {

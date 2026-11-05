@@ -213,7 +213,7 @@ section p {
 }
 
 
-/* Área de doações */
+/* Área de doações - Modelo visual estruturado */
 .doacoes {
     text-align: center;
 }
@@ -221,30 +221,34 @@ section p {
 .grid-doacoes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    gap: 16px;
     margin: 25px 0;
 }
 
 .doacao-card {
-    padding: 22px;
     background: var(--cor-warmBeige);
-    border: 3px solid var(--cor-rust);
+
     border-radius: 8px;
-    transition: transform 0.2s;
+    padding: 22px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.doacao-card:hover {
-    transform: scale(1.02);
-}
 
-.doacao-card span {
-    font-size: 2.2rem;
-}
 
 .doacao-card h3 {
+    margin: 4px 0 0;
     color: var(--cor-rust);
+    font-size: 1.25rem;
 }
 
+.doacao-card p {
+    margin: 0;
+    line-height: 1.5;
+    color: var(--cor-espresso);
+}
 
 
 
