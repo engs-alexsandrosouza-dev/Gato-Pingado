@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gato Pingado</title>
     <link rel="stylesheet" href="perfil.css">
+    <link rel="stylesheet" href="acessibilidade.css">
 </head>
+
+
 <body id="pagina">
+    <script src="acessibilidade.js" defer></script>
 
         <div class="cabecalho-conteudo">
             <p class="titulo">Seja bem-vindo!</p>
@@ -23,7 +27,14 @@
         <a href="cardapio.html">Cardapio</a>
     </nav>
 
-
+ <div class="acessibilidade-botao" aria-label="Ajustes de Acessibilidade">
+            <button type="button"
+            id="diminuir-fonte" aria-label="Diminuir tamanho da fonte">A-</button>
+            <button type="button"
+            id="aumentar-fonte" aria-label="Aumentar tamanho da fonte">A+</button>
+            <button type="button"
+            id="alto-contraste" aria-pressed="false">Alto contraste</button>
+        </div>
 
 <main id="conteudo-principal">
 
