@@ -4,49 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gato Pingado</title>
-    <link rel="stylesheet" href="cardapio.css">
     <link rel="stylesheet" href="acessibilidade.css">
+    <link rel="stylesheet" href="cardapio.css">
 </head>
 
 <body>
 <script src="acessibilidade.js" defer></script>
 
-    <header class="cabecalho" id="inicio">
+<header>
+    <div class="logo">
+        <h1>Cardapio</h1>
+        <span>As melhores delicias se encontram aqui!</span>
+    </div>
 
-<div id="foto-perfil">
-    <a href="perfil.html" title="Acessar meu perfil">
-        <img src="imagens/Nova pasta/Logo-Perfil.jpg"
-             alt="Foto de perfil">
-    </a>
-</div>
-
-        <div class="cabecalho-conteudo">
-            <h1 class="titulo">Cardapio</h1>
-            <p class="slogan">as melhores delicias do momento.</p>
-        </div>
-    </header>
-
-    <nav class="menu">
+    <nav>
+        
         <a href="index.html">Início</a>
-        <a href="cardapio.html">Cardapio</a>
+        <a href="adoção.html">adoção</a>
         <a href="gatos.html">Os gatos</a>
-        <a href="adoção.html">Adoção</a>
-        <a href="delivery.html">Delivery</a>
+        <a href="loja.html">Loja</a>
         <a href="redes.html">Nossas redes</a>
         <a href="sobre-nos.html">Sobre nós</a>
         <a href="perfil.html">Perfil</a>
+        
     </nav>
 
-    <div class="acessibilidade-botao" aria-label="Ajustes de Acessibilidade">
-            <button type="button"
-            id="diminuir-fonte" aria-label="Diminuir tamanho da fonte">A-</button>
-            <button type="button"
-            id="aumentar-fonte" aria-label="Aumentar tamanho da fonte">A+</button>
-            <button type="button"
-            id="alto-contraste" aria-pressed="false">Alto contraste</button>
-        </div>
+    <div class="acessibilidade-botao">
 
-    <main id="conteudo-principal">
+    <button
+        type="button"
+        id="abrir-acessibilidade"
+        class="botao-acessibilidade"
+        aria-expanded="false"
+        aria-controls="painel-acessibilidade">
+
+        Acessibilidade
+
+    </button>
+
+    <div class="painel-acessibilidade" id="painel-acessibilidade" hidden>
+
+        <button type="button" id="diminuir-fonte">
+            A-
+        </button>
+
+        <button type="button" id="aumentar-fonte">
+            A+
+        </button>
+
+        <button type="button" id="alto-contraste" aria-pressed="false">
+            Alto contraste
+        </button>
+
+    </div>
+
+    
+</header>
+        
+        <main id="conteudo-principal">
+            
         <section>
             <section>
             <h2>Docinhos</h2>

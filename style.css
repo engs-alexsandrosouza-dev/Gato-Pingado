@@ -32,7 +32,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 2rem 5%;
-    background-color: #E6C9A8;
+    background-color: var(--cor-warmBeige);
 }
 
 
@@ -56,7 +56,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #3B2924;
+    color: var(--cor-espresso);
     font-weight: 700;
     font-size: 0.9rem;
     transition: color 0.3s ease;
@@ -65,13 +65,13 @@ nav a {
 
 /* Efeito ao passar o mouse nos links do menu */
 nav a:hover {
-    color: #A6533C; /* Cor Rust */
+    color: var(--cor-rust); /* Cor Rust */
 }
 
 
 .support-btn {
-    background-color: #3B2924;
-    color: #FFF1D6;
+    background-color: var(--cor-espresso);
+    color: var(--cor-cream);
     border: none;
     padding: 0.5rem 1.5rem;
     border-radius: 20px;
@@ -83,7 +83,7 @@ nav a:hover {
 
 /* Efeito ao passar o mouse no botão suporte */
 .support-btn:hover {
-    background-color: #A6533C; /* Muda para Rust */
+    background-color: var(--cor-rust); /* Muda para Rust */
     transform: scale(1.05); /* Aumenta ligeiramente */
 }
 
@@ -122,8 +122,8 @@ nav a:hover {
 
 
 .btn-dark {
-    background-color: #3B2924;
-    color: #FFF1D6;
+    background-color: var(--cor-espresso);
+    color: var(--cor-cream);
     border: none;
     padding: 0.8rem 1.5rem;
     border-radius: 25px;
@@ -134,15 +134,15 @@ nav a:hover {
 
 
 .btn-dark:hover {
-    background-color: #A6533C;
+    background-color: var(--cor-rust);
     transform: translateY(-3px); /* Levanta o botão */
 }
 
 
 .btn-outline {
     background-color: transparent;
-    color: #3B2924;
-    border: 2px solid #3B2924;
+    color: var(--cor-espresso);
+    border: 2px solid var(--cor-espresso);
     padding: 0.8rem 1.5rem;
     border-radius: 25px;
     font-weight: 700;
@@ -152,8 +152,8 @@ nav a:hover {
 
 
 .btn-outline:hover {
-    background-color: #3B2924;
-    color: #FFF1D6;
+    background-color: var(--cor-espresso);
+    color: var(--cor-cream);
     transform: translateY(-3px);
 }
 
@@ -170,7 +170,7 @@ nav a:hover {
 
 
 .popular-menu {
-    background-color: #C58B5A;
+    background-color: var(--cor-rust);
     margin: 2rem 5%;
     border-radius: 30px;
     padding: 3rem;
@@ -182,7 +182,7 @@ nav a:hover {
 
 
 .menu-intro h3 {
-    color: #FFF1D6;
+    color: var(--cor-cream);
     font-size: 2rem;
     margin-bottom: 1rem;
 }
@@ -196,8 +196,8 @@ nav a:hover {
 
 .btn-outline-light {
     background-color: transparent;
-    color: #FFF1D6;
-    border: 2px solid #FFF1D6;
+    color: var(--cor-cream);
+    border: 2px solid var(--cor-cream);
     padding: 0.5rem 1.5rem;
     border-radius: 25px;
     font-weight: 700;
@@ -207,8 +207,8 @@ nav a:hover {
 
 
 .btn-outline-light:hover {
-    background-color: #FFF1D6;
-    color: #C58B5A;
+    background-color: var(--cor-cream);
+    color: var(--cor-rust);
 }
 
 
@@ -228,8 +228,7 @@ nav a:hover {
     justify-content: center;
     gap: 2rem;
 }
-
-.promo-dark .promo-text h2 {
+.promo-text h2 {
     color: #FFF1D6;
 }
 
@@ -238,17 +237,53 @@ nav a:hover {
 }
 
 .promo-dark .promo-desc p {
-    color: #E6C9A8; /* Texto secundário em Bege Médio */
-}
+    color: #E6C9A8; /* Texto secundário em Bege Médio */} 
+.card {
+    background-color: var(--cor-warmBeige);
+    border-radius: 20px;
+    padding: 1.5rem;
+    text-align: center;
+    width: 140px;
+    color: var(--cor-espresso);
+    transition: all 0.3s ease; /* Transição para o cartão */
+    cursor: pointer;
 
+}
+.promo.promo-dark {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        margin: 1rem 5%;
+        padding: 2rem 1.5rem;
+        text-align: center;
+        width: 90%; /* Garante que não estoure a tela */
+        gap: 1.5rem;
+    }
+
+    .promo-text h2 {
+        font-size: 1.8rem; /* Diminui o título para caber no celular */
+    }
+
+    .promo-desc p {
+        margin: 0 auto 1rem;
+        max-width: 100%;
+    }
+
+    .promo-images, .promo-icon {
+        font-size: 3rem; /* Diminui os emojis para não ocupar espaço demais */
+    }
 
 /* Efeito ao passar o mouse nos cartões do menu */
 .card:hover {
     transform: translateY(-10px); /* Levanta o cartão */
     box-shadow: 0 10px 20px rgba(59, 41, 36, 0.3); /* Adiciona sombra */
-    background-color: #FFF1D6; /* Clareia o fundo do cartão */
+    background-color: var(--cor-cream); /* Clareia o fundo do cartão */
 }
 
+img{
+    
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
 
 .card-img {
     font-size: 4rem;
@@ -453,3 +488,4 @@ nav a:hover {
         padding: 0.8rem;
     }
 }
+

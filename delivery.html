@@ -33,36 +33,55 @@
             </p>
         </div>
 
-    </header>
+   <header>
+    <div class="logo">
+        <h1>Delivery</h1>
+        <span>Seu cantinho favorito, agora na sua casa!</span>
+    </div>
 
-    <!-- MENU -->
-    <nav class="menu" aria-label="Menu principal">
+    <nav>
+        
         <a href="index.html">Início</a>
         <a href="cardapio.html">Cardápio</a>
         <a href="gatos.html">Os gatos</a>
-        <a href="adoção.html">Adoção</a>
-        <a href="delivery.html">Delivery</a>
+        <a href="loja.html">Loja</a>
         <a href="redes.html">Nossas redes</a>
         <a href="sobre-nos.html">Sobre nós</a>
         <a href="perfil.html">Perfil</a>
+        
     </nav>
 
-    <!-- ACESSIBILIDADE -->
-    <div class="acessibilidade-botao"
-         aria-label="Ajustes de acessibilidade">
+    <div class="acessibilidade-botao">
 
-        <button type="button" id="diminuir-fonte"
-                aria-label="Diminuir fonte">A-</button>
+    <button
+        type="button"
+        id="abrir-acessibilidade"
+        class="botao-acessibilidade"
+        aria-expanded="false"
+        aria-controls="painel-acessibilidade">
 
-        <button type="button" id="aumentar-fonte"
-                aria-label="Aumentar fonte">A+</button>
+        Acessibilidade
 
-        <button type="button" id="alto-contraste"
-                aria-pressed="false">
+    </button>
+
+    <div class="painel-acessibilidade" id="painel-acessibilidade" hidden>
+
+        <button type="button" id="diminuir-fonte">
+            A-
+        </button>
+
+        <button type="button" id="aumentar-fonte">
+            A+
+        </button>
+
+        <button type="button" id="alto-contraste" aria-pressed="false">
             Alto contraste
         </button>
 
     </div>
+
+    
+</header>
 
     <main id="conteudo-principal">
 
