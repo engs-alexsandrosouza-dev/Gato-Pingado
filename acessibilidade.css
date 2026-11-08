@@ -80,7 +80,8 @@ body.alto-contraste .formulario-adocao form,
 body.alto-contraste .doacao-card,
 body.alto-contraste .grid-item,
 body.alto-contraste .etapa, 
-body.alto-contraste .como-adotar { 
+body.alto-contraste .como-adotar,
+body.alto-contraste .cabecalho{ 
     background: var(--cor-espresso);
 }
 body.alto-contraste .fechar{
@@ -101,7 +102,7 @@ body.alto-contraste .fechar{
     }
 }
 
-
+/* barrinha linda */
 /* Chrome, Edge, Safari and Opera */
 *::-webkit-scrollbar {
   width: 18px;
@@ -129,5 +130,5 @@ body.alto-contraste .fechar{
   * {
     scrollbar-width: auto;
     scrollbar-color: #8f513a #fffbf0;
-  }
+    }
 }
