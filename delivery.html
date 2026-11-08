@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Delivery | Gato Pingado</title>
+
+    <link rel="stylesheet" href="delivery.css">
+    <link rel="stylesheet" href="acessibilidade.css">
+
+    <script src="acessibilidade.js" defer></script>
+    <script src="delivery.js" defer></script>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho" id="inicio">
+
+        <div id="foto-perfil">
+            <a href="perfil.html" title="Acessar meu perfil">
+                <img src="imagens/Nova pasta/Logo-Perfil.jpg"
+                     alt="Foto de perfil">
+            </a>
+        </div>
+
+        <div class="cabecalho-conteudo">
+            <h1 class="titulo">Delivery</h1>
+            <p class="slogan">
+                Seu cantinho favorito, agora na sua casa!
+            </p>
+        </div>
+
+    </header>
+
+    <!-- MENU -->
+    <nav class="menu" aria-label="Menu principal">
+        <a href="index.html">Início</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="gatos.html">Os gatos</a>
+        <a href="adoção.html">Adoção</a>
+        <a href="delivery.html">Delivery</a>
+        <a href="redes.html">Nossas redes</a>
+        <a href="sobre-nos.html">Sobre nós</a>
+        <a href="perfil.html">Perfil</a>
+    </nav>
+
+    <!-- ACESSIBILIDADE -->
+    <div class="acessibilidade-botao"
+         aria-label="Ajustes de acessibilidade">
+
+        <button type="button" id="diminuir-fonte"
+                aria-label="Diminuir fonte">A-</button>
+
+        <button type="button" id="aumentar-fonte"
+                aria-label="Aumentar fonte">A+</button>
+
+        <button type="button" id="alto-contraste"
+                aria-pressed="false">
+            Alto contraste
+        </button>
+
+    </div>
+
+    <main id="conteudo-principal">
+
+        <!-- APRESENTAÇÃO -->
+        <section class="apresentacao-delivery">
+
+            <h2>Uma patinha de carinho em cada pedido!</h2>
+
+            <p>
+                Que tal aproveitar nossas delícias sem sair
+                de casa? Escolha seus produtos favoritos,
+                monte seu pedido e deixe o Gato Pingado
+                fazer parte do seu dia!
+            </p>
+
+            <a href="#produtos" class="botao-principal">
+                Fazer meu pedido
+            </a>
+
+        </section>
+
+        <!-- ÁREA PRINCIPAL -->
+        <div class="layout-delivery">
+
+            <!-- PRODUTOS -->
+            <section class="area-produtos" id="produtos">
+
+                <h2 class="titulo-secao">Nossas delícias</h2>
+
+                <!-- DOCINHOS -->
+                <h3 class="categoria">Docinhos</h3>
+
+                <div class="grid-produtos">
+
+                    <article class="produto">
+                        <img src="imagens/cardapio/Cheesecake Patinhas Vermelhas.jpeg"
+                             alt="Cheesecake de frutas vermelhas">
+
+                        <div class="produto-info">
+                            <h4>Cheesecake</h4>
+                            <p>Uma fatia de pura felicidade!</p>
+                            <span class="preco">R$ 20,00</span>
+
+                            <button type="button"
+                                onclick="adicionarCarrinho('Cheesecake', 20)">
+                                Adicionar +
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="produto">
+                        <img src="imagens/cardapio/Patacakes.jpeg"
+                             alt="Panquecas com cobertura">
+
+                        <div class="produto-info">
+                            <h4>Patacakes</h4>
+                            <p>Panquecas fofinhas com chocolate!</p>
+                            <span class="preco">R$ 15,00</span>
+
+                            <button type="button"
+                                onclick="adicionarCarrinho('Patacakes', 15)">
+                                Adicionar +
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="produto">
+                        <img src="imagens/cardapio/Meowcarons.jpeg"
+                             alt="Macarons decorados como gatos">
+
+                        <div class="produto-info">
+                            <h4>Meowcarons</h4>
+                            <p>Macarons de diferentes sabores.</p>
+                            <span class="preco">R$ 6,00</span>
+
+                            <button type="button"
+                                onclick="adicionarCarrinho('Meowcarons', 6)">
+                                Adicionar +
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="produto">
+                        <img src="imagens/cardapio/Croissant.jpeg"
+                             alt="Croissant artesanal">
+
+                        <div class="produto-info">
+                            <h4>Croissant</h4>
+                            <p>Massa folhada e douradinha.</p>
+                            <span class="preco">R$ 12,00</span>
+
+                            <button type="button"
+                                onclick="adicionarCarrinho('Croissant', 12)">
+                                Adicionar +
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- BEBIDAS QUENTES -->
+                <h3 class="categoria">Bebidas Quentes</h3>
+
+                <div class="grid-produtos">
+
+                    <article class="produto">
+                        <img src="imagens/cardapio/Catpuccino.jpeg"
+                             alt="Cappuccino cremoso">
+
+                        <div class="produto-info">
+                            <h4>Catpuccino</h4>
+                            <p>Um abraço quentinho em forma de café.</p>
+                            <span class="preco">R$ 12,00</span>
+
+                            <button type="button"
+                                onclick="adicionarCarrinho('Catpuccino', 12)">
+                                Adicionar +
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="produto">
+                        <img src="imagens/cardapio/Catfé com Leite.jpeg"
+                             alt="Café com leite">
+
+                        <div class="produto-info">
+                            <h4>Catfé com Leite</h4>
+                            <p>O clássico que aquece o coração.</p>
+                            <span class="preco">R$ 10,00</span>
+
+                            <button type="button"
+                                onclick="adicionarCarrinho('Catfé com Leite', 10)">
+                                Adicionar +
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="produto">
+                        <img src="imagens/cardapio/cat-late.jpeg"
+                             alt="Chocolate quente">
+
+                        <div class="produto-info">
+                            <h4>Cat-late</h4>
+                            <p>Chocolate quente com chantilly.</p>
+                            <span class="preco">R$ 14,00</span>
+
+                            <button type="button"
+                                onclick="adicionarCarrinho('Cat-late', 14)">
+                                Adicionar +
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="produto">
+                        <img src="imagens/cardapio/Moccat.jpeg"
+                             alt="Mocha cremoso">
+
+                        <div class="produto-info">
+                            <h4>Moccat</h4>
+                            <p>Café, chocolate e muita cremosidade.</p>
+                            <span class="preco">R$ 15,00</span>
+
+                            <button type="button"
+                                onclick="adicionarCarrinho('Moccat', 15)">
+                                Adicionar +
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- BEBIDAS FRIAS -->
+                <h3 class="categoria">Bebidas Frias</h3>
+
+                <div class="grid-produtos">
+
+                    <article class="produto">
+                        <img src="imagens/cardapio/Meowshake.jpeg"
+                             alt="Milk-shake de chocolate">
+
+                        <div class="produto-info">
+                            <h4>Meowshake</h4>
+                            <p>Chocolate, chantilly e diversão!</p>
+                            <span class="preco">R$ 15,00</span>
+
+                            <button type="button"
+                                onclick="adicionarCarrinho('Meowshake', 15)">
+                                Adicionar +
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="produto">
+                        <img src="imagens/cardapio/matcha.png"
+                             alt="Matcha gelado">
+
+                        <div class="produto-info">
+                            <h4>Matcha</h4>
+                            <p>Refrescante e cheio de charme.</p>
+                            <span class="preco">R$ 16,50</span>
+
+                            <button type="button"
+                                onclick="adicionarCarrinho('Matcha', 16.50)">
+                                Adicionar +
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+
+            </section>
+
+         
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer id="rodape" class="rodape">
+        <p>
+            <strong>
+                &copy; 2026 - Isabely Gislaine,
+                Marya Motta, Emily Sequineu,
+                Alexsandro Souza
+            </strong>
+        </p>
+    </footer>
+
+</body>
+</html>
