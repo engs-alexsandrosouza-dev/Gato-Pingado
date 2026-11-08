@@ -6,33 +6,60 @@
     <meta name="descripition" content="Conheça a história do Gato Pingado, o nosso Gato Café e como apoiamos os felinos.">
     <title>Sobre Nós | Gato Pingado</title>
     <link rel="stylesheet"href="style.css">
-    <script src="acessibilidade.js" defer></script>
+    <link rel="stylesheet"href="sobre-nos.css">  
+    <script src="buttoncabecalho.js" defer></script>
 </head>
 <body>
     <header class="site-header">
-        <a class="logo" href="index.html"
-            aria-label="Gato Pingado - Página Inicial">☕ Gato Pingado
-        </a>
+        <div class="logo">
+    <h1>Gato Pingado</h1>
+    <span>CAFÉ</span>
+</div>
         <nav aria-label="Navegação principal">
         <a href="index.html">Início</a>
         <a href="cardapio.html">Cardápio</a>
         <a href="gatos.html">Os gatos</a>
         <a href="adoção.html">Adoção</a>
         <a href="loja.html">Loja</a>
-        <a href="redes.html">Nossas redes</a>
+        <a href="redes.html">Redes Sociais</a>
         <a href="perfil.html">Perfil</a>
+        <a href="delivery.html">Delivery</a>
 
 
 
         </nav>
-        <div class="acessibilidade-botao" aria-label="Ajustes de Acessibilidade">
-            <button type="button"
-            id="diminuir-fonte" aria-label="Diminuir tamanho da fonte">A-</button>
-            <button type="button"
-            id="aumentar-fonte" aria-label="Aumentar tamanho da fonte">A+</button>
-            <button type="button"
-            id="alto-contraste" aria-pressed="false">Alto contraste</button>
-        </div>
+        <div class="acessibilidade-botao">
+
+    <button
+        type="button"
+        id="abrir-acessibilidade"
+        class="botao-acessibilidade"
+        aria-expanded="false"
+        aria-controls="painel-acessibilidade">
+
+        Acessibilidade
+
+    </button>
+
+    <!-- OPÇÕES DE ACESSIBILIDADE -->
+    <div class="painel-acessibilidade" id="painel-acessibilidade" hidden>
+        
+
+        <button type="button" id="diminuir-fonte">
+            A-
+        </button>
+
+        <button type="button" id="aumentar-fonte">
+            A+
+        </button>
+
+        <button type="button" id="alto-contraste" aria-pressed="false">
+            Alto contraste
+        </button>
+
+    </div>
+
+</div>
     </header>
 
     <main id="conteudo">
@@ -41,7 +68,7 @@
                 Um lugar de carinho, café e ronronados!
             </p>
 
-<a class="button" href="index.html"><-- Voltar à Página Inicial</a>
+<a class="button" href="cardapio.html"> Conheça Nosso Cardápio</a>
             <h1>Sobre o Gato Pingado</h1>
             <p>Mais do que apenas uma cafeteria: um espaço criado para aproximar pessoas e gatos
                 com respeito, conforto e afeto </p>
