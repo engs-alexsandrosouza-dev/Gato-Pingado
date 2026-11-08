@@ -12,30 +12,55 @@
 <body id="pagina">
     <script src="acessibilidade.js" defer></script>
 
-        <div class="cabecalho-conteudo">
-            <p class="titulo">Seja bem-vindo!</p>
-            <h3 class="slogan">Esse é seu cantinho favorito!</h3>
-        </div>
-    </header>
+<header>
+    <div class="logo">
+        <h1>Perfil</h1>
+        <span>Bem vindo ao seu cantinho favorito!</span>
+    </div>
 
-    <nav class="menu">
+    <nav>
+        
         <a href="index.html">Início</a>
         <a href="cardapio.html">Cardápio</a>
         <a href="gatos.html">Os gatos</a>
-        <a href="adoção.html">Adoção</a>
         <a href="loja.html">Loja</a>
         <a href="redes.html">Nossas redes</a>
         <a href="sobre-nos.html">Sobre nós</a>
+        <a href="perfil.html">Perfil</a>
+        
     </nav>
 
- <div class="acessibilidade-botao" aria-label="Ajustes de Acessibilidade">
-            <button type="button"
-            id="diminuir-fonte" aria-label="Diminuir tamanho da fonte">A-</button>
-            <button type="button"
-            id="aumentar-fonte" aria-label="Aumentar tamanho da fonte">A+</button>
-            <button type="button"
-            id="alto-contraste" aria-pressed="false">Alto contraste</button>
-        </div>
+    <div class="acessibilidade-botao">
+
+    <button
+        type="button"
+        id="abrir-acessibilidade"
+        class="botao-acessibilidade"
+        aria-expanded="false"
+        aria-controls="painel-acessibilidade">
+
+        Acessibilidade
+
+    </button>
+
+    <div class="painel-acessibilidade" id="painel-acessibilidade" hidden>
+
+        <button type="button" id="diminuir-fonte">
+            A-
+        </button>
+
+        <button type="button" id="aumentar-fonte">
+            A+
+        </button>
+
+        <button type="button" id="alto-contraste" aria-pressed="false">
+            Alto contraste
+        </button>
+
+    </div>
+
+    
+</header>
 
 <main id="conteudo-principal">
 

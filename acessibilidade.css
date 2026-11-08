@@ -1,29 +1,85 @@
+/* =====================================
+   MENU DE ACESSIBILIDADE
+===================================== */
 
-/* BOTÕES DE ACESSIBILIDADE */
 .acessibilidade-botao {
+    position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 8px;
-    padding: 12px;
 }
 
-.acessibilidade-botao button {
-    padding: 9px 14px;
-    border: 2px solid var(--cor-espresso);
-    border-radius: 6px;
-    background: var(--cor-warmBeige);
-    color: var(--cor-espresso);
-    font: inherit;
+/* BOTÃO PRINCIPAL */
+
+.botao-acessibilidade {
+    background-color: #3B2924;
+    color: #FFFFFF;
+    border: 2px solid #3B2924;
+    border-radius: 20px;
+    padding: 0.7rem 1.3rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-acessibilidade:hover {
+    background-color: #8F513A;
+    color: #FFFFFF;
+    border-color: #8F513A;
+}
+
+/* PAINEL DE OPÇÕES */
+
+.painel-acessibilidade {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    z-index: 1000;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+
+    min-width: 190px;
+    padding: 1rem;
+
+    background-color: #FFF1D6;
+    border: 2px solid #8F513A;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ESCONDER O PAINEL QUANDO FECHADO */
+
+.painel-acessibilidade[hidden] {
+    display: none;
+}
+
+/* BOTÕES INTERNOS */
+
+.painel-acessibilidade button {
+    background-color: #E6C9A8;
+    color: #3B2924;
+    border: 1px solid #8F513A;
+    border-radius: 8px;
+    padding: 0.7rem;
+    font-family: 'Nunito', sans-serif;
     font-weight: bold;
     cursor: pointer;
 }
 
-.acessibilidade-botao button:hover {
-    background: var(--cor-espresso);
-    color: white;
+/* BOTÃO DE ALTO CONTRASTE OCUPA A LINHA INTEIRA */
+
+#alto-contraste {
+    grid-column: 1 / -1;
 }
+
+.painel-acessibilidade button:hover {
+    background-color: #A87756;
+    color: #FFFFFF;
+}
+
 
 /* DESTAQUE DE FOCO */
 a:focus-visible,
@@ -81,7 +137,8 @@ body.alto-contraste .doacao-card,
 body.alto-contraste .grid-item,
 body.alto-contraste .etapa, 
 body.alto-contraste .como-adotar,
-body.alto-contraste .cabecalho{ 
+body.alto-contraste .cabecalho,
+body.alto-contraste header{ 
     background: var(--cor-espresso);
 }
 body.alto-contraste .fechar{
@@ -89,18 +146,7 @@ body.alto-contraste .fechar{
 }
 
 
-/* RESPONSIVIDADE */
-@media (max-width: 600px) {
-    .acessibilidade-botao {
-        padding: 10px;
-        gap: 6px;
-    }
 
-    .acessibilidade-botao button {
-        padding: 8px 11px;
-        font-size: 0.9rem;
-    }
-}
 
 /* barrinha linda */
 /* Chrome, Edge, Safari and Opera */
@@ -130,5 +176,13 @@ body.alto-contraste .fechar{
   * {
     scrollbar-width: auto;
     scrollbar-color: #8f513a #fffbf0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .painel-acessibilidade {
+        right: 50%;
+        transform: translateX(50%);
     }
 }
