@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap');
 
 
+/* Estilos gerais */
+:root {
+    --cor-caramel: #A87756;
+    --cor-warmBeige: #D6BAA2;
+    --cor-cream: #F0E0C7;
+    --cor-espresso: #422B23;
+    --cor-rust: #8F513A;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -8,16 +18,16 @@
 }
 
 
+
 body {
+    margin: 0;
+    background: var(--cor-cream);
+    color: var(--cor-espresso);
     font-family: 'Nunito', sans-serif;
-    background-color: #FFF1D6;
-    color: #3B2924;
 }
 
-
 h1, h2, h3, h4 {
-    font-family: 'Fredoka', sans-serif;
-    color: #3B2924;
+    font-family: 'Fredoka', sans-serif;;
 }
 
 
@@ -294,7 +304,7 @@ nav a:hover {
 }
 
 
-footer {
+.menu {
     background-color: #3B2924;
     color: #FFF1D6;
     padding: 4rem 5%;
@@ -337,6 +347,21 @@ footer {
     color: #E6C9A8;
 }
 
+ .site-footer {
+    background-color: var(--cor-espresso);
+    color: #FFF1D6;
+    text-align: center;
+    padding: 2rem 5%;
+    margin-top: 4rem;
+    border-top: 5px solid var(--cor-warmBeige);
+}
+
+.site-footer p {
+    margin: 0;
+    font-weight: 600;
+}
+
+
 
 .btn-orange {
     background-color: #A6533C;
@@ -355,3 +380,10 @@ footer {
     transform: translateY(-3px);
 }
 
+
+@media (max-width: 600px) {
+    .site-footer {
+        padding: 2rem 1rem;
+        font-size: 0.9rem;
+    }
+}

@@ -1,8 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap');
 
-/* ==========================================
-   ESTILOS GERAIS
-========================================== */
 
+/* Estilos gerais */
 :root {
     --cor-caramel: #A87756;
     --cor-warmBeige: #D6BAA2;
@@ -11,11 +10,16 @@
     --cor-rust: #8F513A;
 }
 
+
 body {
     margin: 0;
     background: var(--cor-cream);
     color: var(--cor-espresso);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Fredoka', sans-serif;;
 }
 
 /* ==========================================
@@ -88,22 +92,25 @@ body {
     margin: 30px auto;
 }
 
-/* ==========================================
+/* =========================================
    RODAPÉ
-========================================== */
+========================================= */
 
-.rodape {
-    padding: 18px;
-
-    background: var(--cor-caramel);
-    color: var(--cor-warmBeige);
-
+.site-footer {
+    background-color: var(--cor-espresso);
+    color: #FFF1D6;
     text-align: center;
+    padding: 2rem 5%;
+    margin-top: 4rem;
+    border-top: 5px solid var(--cor-warmBeige);
 }
 
-.rodape p {
+.site-footer p {
     margin: 0;
+    font-weight: 600;
 }
+
+
 
 /* ==========================================
    RESPONSIVIDADE
@@ -118,9 +125,13 @@ body {
         height: 45px;
     }
 
-    .cabecalho {
-        padding: 90px 15px 25px;
+ 
+@media (max-width: 600px) {
+    .site-footer {
+        padding: 2rem 1rem;
+        font-size: 0.9rem;
     }
+}
 }
 
 
