@@ -14,7 +14,7 @@ O projeto foi dividido entre quatro integrantes, com cada participante responsá
 | Integrante | Responsabilidades |
 |---|---|
 | **Marya Motta** | Página inicial, redes sociais e desenvolvimento do cabeçalho. |
-| **Isabely Gislaine** | Cardápio, adoção, implementação dos recursos de acessibilidade e padronização visual das páginas. |
+| **Isabely Gislaine** | Cardápio, adoção, implementação dos recursos de acessibilidade e padronização visual das páginas, criação do readme. |
 | **Emily Sequineu** | Página Sobre Nós, página Os Gatos e desenvolvimento do rodapé (footer). |
 | **Alexandre** | Página Delivery, página Perfil e seleção das imagens utilizadas no projeto. |
 
