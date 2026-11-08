@@ -1,0 +1,595 @@
+
+/* CSS COMPARTILHADO - PÁGINAS GATOS E SOBRE NÓS - EMILY */
+
+:root {
+    --caramel: #A87756;
+    --warm-beige: #E6C9A8;
+    --cream: #FFF1D6;
+    --espresso: #8F513A;
+
+    --text: #3B2924;
+    --background: #FFF1D6;
+    --card-background: #FFFFFF;
+
+    --font-scale: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--cream);
+    color: var(--text);
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration-thickness: 2px;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #1B5E75;
+    outline-offset: 4px;
+}
+
+button,
+.button {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid var(--espresso);
+    border-radius: 0.5rem;
+    padding: 0.7rem 1rem;
+    background-color: var(--cream);
+    color: var(--espresso);
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover,
+.button:hover {
+    filter: brightness(0.92);
+}
+
+/* SEÇÃO PRINCIPAL */
+
+.cat {
+    text-align: center;
+    padding: 5rem 1.5rem;
+    background-color: var(--warm-beige);
+}
+
+.cat h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    margin: 1.5rem 0;
+}
+
+.cat p {
+    max-width: 700px;
+    margin: 1rem auto 1.5rem;
+}
+
+.bigode {
+    text-transform: uppercase;
+    letter-spacing: 0.12rem;
+    font-weight: bold;
+}
+
+/* SEÇÕES DE CONTEÚDO */
+
+.content-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+}
+
+.section-heading {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(1.8rem, 2.5vw, 2.2rem);
+    margin: 0.5rem 0;
+}
+
+/* HISTÓRIA */
+
+.historia-card {
+    background-color: var(--card-background);
+    border-left: 0.5rem solid var(--caramel);
+    border-radius: 0.7rem;
+    padding: 2rem;
+}
+
+.historia-card p {
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+}
+
+/* CARTÕES */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.info-card {
+    background-color: var(--card-background);
+    border: 2px solid var(--warm-beige);
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+    transition: transform 0.2s ease;
+}
+
+.card-icon {
+    font-size: 2.2rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.info-card h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.info-card p {
+    margin-bottom: 0;
+}
+
+.info-card ul {
+    padding-left: 1.5rem;
+    margin-bottom: 0;
+}
+
+.info-card li {
+    margin: 0.6rem 0;
+}
+
+/* SEÇÃO DE ADOÇÃO */
+
+.adoption-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px 20px;
+}
+
+.adoption-banner h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto 20px;
+}
+
+.adoption-banner p {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto 20px;
+}
+
+.adoption-banner .button {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+}
+
+/* COMPORTAMENTO DOS GATOS */
+
+.cat-small h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    margin: 0.5rem 0 1rem;
+}
+
+.behavior-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.behavior-list article {
+    background-color: var(--card-background);
+    border: 2px solid var(--warm-beige);
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+}
+
+.behavior-list h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    margin-top: 0;
+}
+
+.behavior-list p {
+    margin-bottom: 0;
+}
+
+/* CUIDADOS */
+
+.do-dont .good {
+    border-top: 0.5rem solid #572e24;
+}
+
+.do-dont .avoid {
+    border-top: 0.5rem solid #572e24;
+}
+
+/* CHAMADA PARA AÇÃO */
+
+.cta-section {
+    text-align: center;
+    background-color: var(--caramel);
+    padding: 4rem 1.5rem;
+}
+
+.cta-section h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+    margin: 0.5rem 0;
+}
+
+.cta-section p {
+    max-width: 700px;
+    margin: 1rem auto;
+}
+
+.button-secondary {
+    background-color: var(--espresso);
+    color: var(--cream);
+    border-color: var(--espresso);
+}
+
+/* RODAPÉ */
+
+.site-footer {
+    text-align: center;
+    background-color: var(--espresso);
+    color: var(--cream);
+    padding: 1rem;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+/* ALTO CONTRASTE */
+
+body.alto-contraste {
+    --cream: #FFFFFF;
+    --warm-beige: #FFFFFF;
+    --caramel: #FFFF00;
+    --espresso: #000000;
+    --text: #000000;
+    --background: #FFFFFF;
+    --card-background: #FFFFFF;
+}
+
+body.alto-contraste {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+/* Textos */
+
+body.alto-contraste h1,
+body.alto-contraste h2,
+body.alto-contraste h3,
+body.alto-contraste p,
+body.alto-contraste span,
+body.alto-contraste li,
+body.alto-contraste label {
+    color: #FFFFFF !important;
+}
+
+/* Fundos das seções e cartões */
+
+body.alto-contraste .cat,
+body.alto-contraste .content-section,
+body.alto-contraste .historia-card,
+body.alto-contraste .info-card,
+body.alto-contraste .behavior-list article,
+body.alto-contraste .cta-section {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    border: 2px solid #FFFFFF !important;
+}
+
+body.alto-contraste .info-card,
+body.alto-contraste .historia-card,
+body.alto-contraste .behavior-list article {
+    border: 2px solid #000000;
+}
+
+
+.site-footer {
+    background-color: #3B2924;
+    color: #FFF1D6;
+    text-align: center;
+    padding: 2rem 5%;
+    margin-top: 4rem;
+    border-top: 5px solid #E6C9A8;
+}
+
+.site-footer p {
+    margin: 0;
+    font-weight: 600;
+}
+
+/* RESPONSIVIDADE DO RODAPÉ */
+
+@media (max-width: 600px) {
+    .site-footer {
+        padding: 2rem 1rem;
+        font-size: 0.9rem;
+    }
+
+}
+
+/* Links */
+
+body.alto-contraste a {
+    color: #FFFF00 !important;
+}
+
+/* Botões */
+
+body.alto-contraste button,
+body.alto-contraste .button {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    border: 2px solid #FFFF00 !important;
+}
+
+body.alto-contraste .button-secondary {
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+}
+
+/* Ícones */
+
+body.alto-contraste .card-icon {
+    color: #FFFF00 !important;
+}
+
+/* Textos destacados */
+
+body.alto-contraste .bigode {
+    color: #FFFF00 !important;
+}
+
+/* RESPONSIVIDADE */
+
+/* TABLETS */
+
+@media (max-width: 768px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .do-dont .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .behavior-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CELULARES */
+
+@media (max-width: 480px) {
+
+    button,
+    .button {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.95rem;
+    }
+
+    .content-section {
+        padding: 2.5rem 1rem;
+    }
+
+    .historia-card {
+        padding: 1.2rem;
+    }
+}
+
+/* PREFERÊNCIA POR MOVIMENTO REDUZIDO */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* =====================================
+   MENU DE ACESSIBILIDADE
+===================================== */
+
+.acessibilidade-botao {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* BOTÃO PRINCIPAL */
+
+.botao-acessibilidade {
+    background-color: #3B2924;
+    color: #FFFFFF;
+    border: 2px solid #3B2924;
+    border-radius: 20px;
+    padding: 0.7rem 1.3rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-acessibilidade:hover {
+    background-color: #8F513A;
+    color: #FFFFFF;
+    border-color: #8F513A;
+}
+
+/* PAINEL DE OPÇÕES */
+
+.painel-acessibilidade {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    z-index: 1000;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+
+    min-width: 190px;
+    padding: 1rem;
+
+    background-color: #FFF1D6;
+    border: 2px solid #8F513A;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ESCONDER O PAINEL QUANDO FECHADO */
+
+.painel-acessibilidade[hidden] {
+    display: none;
+}
+
+/* BOTÕES INTERNOS */
+
+.painel-acessibilidade button {
+    background-color: #E6C9A8;
+    color: #3B2924;
+    border: 1px solid #8F513A;
+    border-radius: 8px;
+    padding: 0.7rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* BOTÃO DE ALTO CONTRASTE OCUPA A LINHA INTEIRA */
+
+#alto-contraste {
+    grid-column: 1 / -1;
+}
+
+.painel-acessibilidade button:hover {
+    background-color: #A87756;
+    color: #FFFFFF;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+    .painel-acessibilidade {
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+/* =====================================
+   TESTE E CORREÇÃO DO ALTO CONTRASTE
+===================================== */
+
+body.alto-contraste {
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+/* Fundo da página */
+
+body.alto-contraste main,
+body.alto-contraste .cat,
+body.alto-contraste .content-section,
+body.alto-contraste .cta-section {
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+/* Cabeçalho e rodapé */
+
+body.alto-contraste .site-header,
+body.alto-contraste .site-footer {
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+/* Cartões */
+
+body.alto-contraste .historia-card,
+body.alto-contraste .info-card {
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+    border: 2px solid #FFFFFF !important;
+}
+
+/* Textos */
+
+body.alto-contraste h1,
+body.alto-contraste h2,
+body.alto-contraste h3,
+body.alto-contraste p,
+body.alto-contraste span {
+    color: #FFFFFF !important;
+}
+
+/* Links */
+
+body.alto-contraste a {
+    color: #FFFF00 !important;
+}
+
+/* Botões */
+
+body.alto-contraste button,
+body.alto-contraste .button {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    border: 2px solid #FFFF00 !important;
+}

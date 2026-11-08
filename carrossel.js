@@ -45,3 +45,54 @@ document.addEventListener("DOMContentLoaded", function () {
     // Exibe o primeiro slide ao carregar
     mostrarSlide(0);
 });
+
+
+// CARROSSEL DOS GATOS FAVORITOS
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Seleciona o container que possui os gatos
+    const gatos = document.querySelector(".gatos-favoritos");
+
+    // Seleciona as duas setas
+    const anterior = document.querySelector(".gato-anterior");
+    const proximo = document.querySelector(".gato-proximo");
+
+    // Verifica se os elementos existem
+    if (!gatos || !anterior || !proximo) {
+        return;
+    }
+
+    function moverGatos(direcao) {
+
+        // Localiza um cartão
+        const gato = gatos.querySelector(".gato");
+
+        if (!gato) {
+            return;
+        }
+
+        // Descobre o tamanho do cartão
+        const largura = gato.getBoundingClientRect().width;
+
+        // Descobre o espaçamento entre os cartões
+        const estilo = window.getComputedStyle(gatos);
+        const espaco = parseFloat(estilo.columnGap) || 0;
+
+        // Move a largura de um cartão mais o espaço
+        gatos.scrollBy({
+            left: (largura + espaco) * direcao,
+            behavior: "smooth"
+        });
+    }
+
+    // Seta esquerda
+    anterior.addEventListener("click", function () {
+        moverGatos(-1);
+    });
+
+    // Seta direita
+    proximo.addEventListener("click", function () {
+        moverGatos(1);
+    });
+
+});

@@ -1,8 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap');
 
-/* ==========================================
-   ESTILOS GERAIS
-========================================== */
 
+/* Estilos gerais */
 :root {
     --cor-caramel: #A87756;
     --cor-warmBeige: #D6BAA2;
@@ -11,11 +10,16 @@
     --cor-rust: #8F513A;
 }
 
+
 body {
     margin: 0;
     background: var(--cor-cream);
     color: var(--cor-espresso);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Fredoka', sans-serif;;
 }
 
 /* ==========================================
@@ -88,22 +92,25 @@ body {
     margin: 30px auto;
 }
 
-/* ==========================================
+/* =========================================
    RODAPÉ
-========================================== */
+========================================= */
 
-.rodape {
-    padding: 18px;
-
-    background: var(--cor-caramel);
-    color: var(--cor-warmBeige);
-
+.site-footer {
+    background-color: var(--cor-espresso);
+    color: #FFF1D6;
     text-align: center;
+    padding: 2rem 5%;
+    margin-top: 4rem;
+    border-top: 5px solid var(--cor-warmBeige);
 }
 
-.rodape p {
+.site-footer p {
     margin: 0;
+    font-weight: 600;
 }
+
+
 
 /* ==========================================
    RESPONSIVIDADE
@@ -118,9 +125,13 @@ body {
         height: 45px;
     }
 
-    .cabecalho {
-        padding: 90px 15px 25px;
+ 
+@media (max-width: 600px) {
+    .site-footer {
+        padding: 2rem 1rem;
+        font-size: 0.9rem;
     }
+}
 }
 
 
@@ -267,5 +278,135 @@ body {
         top: 115px;
         width: 35px;
         height: 35px;
+    }
+}
+
+seus-gatos {
+    width: 100%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+/* ÁREA DO CARROSSEL */
+.carrossel-gatos {
+    position: relative;
+    width: 100%;
+    padding: 0 55px;
+}
+
+/* CONTAINER DOS GATOS */
+.gatos-favoritos {
+    display: flex;
+    gap: 20px;
+
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+
+    scrollbar-width: none;
+}
+
+/* ESCONDE BARRA DE ROLAGEM */
+.gatos-favoritos::-webkit-scrollbar {
+    display: none;
+}
+
+/* CARTÕES DOS GATOS */
+.gato {
+    flex: 0 0 calc((100% - 40px) / 3);
+    min-width: 0;
+
+    background: var(--cor-warmBeige);
+    border-radius: 15px;
+    overflow: hidden;
+
+    text-align: center;
+    scroll-snap-align: start;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+
+/* IMAGENS DOS GATINHOS */
+.gato img {
+    display: block;
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+
+    /* Mostra uma parte mais alta da fotografia */
+    object-position: center 25%;
+}
+
+/* NOME */
+.gato p {
+    margin: 0;
+    padding: 15px;
+
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--cor-espresso);
+}
+
+/* SETAS */
+.gato-anterior,
+.gato-proximo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+
+    width: 40px;
+    height: 40px;
+
+    background: var(--cor-espresso);
+    color: white;
+
+    border: none;
+    border-radius: 50%;
+
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.gato-anterior {
+    left: 5px;
+}
+
+.gato-proximo {
+    right: 5px;
+}
+
+.gato-anterior:hover,
+.gato-proximo:hover {
+    background: var(--cor-rust);
+}
+
+/* TABLETS */
+@media (max-width: 850px) {
+    .gato {
+        flex-basis: calc((100% - 20px) / 2);
+    }
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+    .carrossel-gatos {
+        padding: 0 42px;
+    }
+
+    .gato {
+        flex-basis: 100%;
+    }
+
+    .gato img {
+        height: 220px;
+    }
+
+    .gato-anterior,
+    .gato-proximo {
+        width: 32px;
+        height: 32px;
     }
 }

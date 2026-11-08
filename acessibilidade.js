@@ -23,7 +23,7 @@
     // Aumenta o texto em 10%.
     aumentarFonte.addEventListener("click", function () {
 
-        if (tamanhoFonte < 130) {
+        if (tamanhoFonte < 150) {
             tamanhoFonte += 10;
 
             document.documentElement.style.fontSize =
