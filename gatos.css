@@ -525,16 +525,8 @@ body.alto-contraste .bigode {
     color: #FFFFFF;
 }
 
-/* RESPONSIVIDADE */
-
-@media (max-width: 768px) {
-    .painel-acessibilidade {
-        right: 50%;
-        transform: translateX(50%);
-    }
-}
 /* =====================================
-   TESTE E CORREÇÃO DO ALTO CONTRASTE
+TESTE E CORREÇÃO DO ALTO CONTRASTE
 ===================================== */
 
 body.alto-contraste {
@@ -592,4 +584,46 @@ body.alto-contraste .button {
     background-color: #FFFFFF !important;
     color: #000000 !important;
     border: 2px solid #FFFF00 !important;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+    .painel-acessibilidade {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+        header {
+        flex-direction: column;
+        padding: 1.5rem 5%;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 1.5rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid rgba(59, 41, 36, 0.1);
+    }
+
+    nav a:last-child {
+        border-bottom: none;
+    }
+
+    .botao-acessibilidade {
+        width: 100%;
+        padding: 0.8rem;
+    }
 }
