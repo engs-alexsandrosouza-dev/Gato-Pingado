@@ -211,16 +211,28 @@ nav a:hover {
     gap: 1rem;
 }
 
+.promo.promo-dark {
+    background-color: #3B2924;
+    color: #FFF1D6;
+    border-radius: 30px;
+    margin: 0.5rem 5% 2rem 5%;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
 
-.card {
-    background-color: #E6C9A8;
-    border-radius: 20px;
-    padding: 1.5rem;
-    text-align: center;
-    width: 140px;
-    color: #3B2924;
-    transition: all 0.3s ease; /* Transição para o cartão */
-    cursor: pointer;
+.promo-dark .promo-text h2 {
+    color: #FFF1D6;
+}
+
+.promo-dark .promo-text span {
+    color: #A6533C; /* Destaque em Rust para contraste */
+}
+
+.promo-dark .promo-desc p {
+    color: #E6C9A8; /* Texto secundário em Bege Médio */
 }
 
 
@@ -354,4 +366,29 @@ footer {
     background-color: #C58B5A; /* Muda para Caramel no hover */
     transform: translateY(-3px);
 }
+
+
+.site-footer {
+    background-color: #3B2924;
+    color: #FFF1D6;
+    text-align: center;
+    padding: 2rem 5%;
+    margin-top: 4rem;
+    border-top: 5px solid #E6C9A8;
+}
+
+.site-footer p {
+    margin: 0;
+    font-weight: 600;
+}
+
+/* RESPONSIVIDADE DO RODAPÉ */
+
+@media (max-width: 600px) {
+    .site-footer {
+        padding: 2rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
 
