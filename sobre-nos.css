@@ -275,14 +275,17 @@ button:hover,
 /* RODAPÉ */
 
 .site-footer {
+    background-color: #3B2924;
+    color: #FFF1D6;
     text-align: center;
-    background-color: var(--espresso);
-    color: var(--cream);
-    padding: 1rem;
+    padding: 2rem 5%;
+    margin-top: 4rem;
+    border-top: 5px solid #E6C9A8;
 }
 
 .site-footer p {
     margin: 0;
+    font-weight: 600;
 }
 
 /* ALTO CONTRASTE */
