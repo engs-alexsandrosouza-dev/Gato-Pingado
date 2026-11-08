@@ -7,11 +7,15 @@
     e a interagir com respeito">
     <title>Os Gatos | Gato Pingado</title>
     <link rel="stylesheet" href="style.css">
-    <script src="acessibilidade.js" defer></script>
+    <link rel="stylesheet" href="gatos.css">
+    <script src="buttoncabecalho.js" defer></script>
 </head>
 <body>
     <header class="site-header">
-    <a class="logo" href="index.html" aria-label="Gato Pingado - Página Inicial">☕ Gato Pingado</a>
+    <div class="logo">
+    <h1>Gato Pingado</h1>
+    <span>CAFÉ</span>
+</div>
 
     <nav aria-label="Navegação principal">
        <a href="index.html">Início</a>
@@ -23,19 +27,36 @@
         <a href="sobre-nos.html">Sobre nós</a>
         <a href="perfil.html">Perfil</a>
     </nav>
+    <div class="acessibilidade-botao">
 
+    <button
+        type="button"
+        id="abrir-acessibilidade"
+        class="botao-acessibilidade"
+        aria-expanded="false"
+        aria-controls="painel-acessibilidade">
 
+        Acessibilidade
 
+    </button>
 
+    <div class="painel-acessibilidade" id="painel-acessibilidade" hidden>
 
-    <div class="acessibilidade-botao" aria-label="Ajustes de Acessibilidade">
-            <button type="button"
-            id="diminuir-fonte" aria-label="Diminuir tamanho da fonte">A-</button>
-            <button type="button"
-            id="aumentar-fonte" aria-label="Aumentar tamanho da fonte">A+</button>
-            <button type="button"
-            id="alto-contraste" aria-pressed="false">Alto contraste</button>
-        </div>
+        <button type="button" id="diminuir-fonte">
+            A-
+        </button>
+
+        <button type="button" id="aumentar-fonte">
+            A+
+        </button>
+
+        <button type="button" id="alto-contraste" aria-pressed="false">
+            Alto contraste
+        </button>
+
+    </div>
+
+</div>
     </header>
 
     <main id="conteudo">
