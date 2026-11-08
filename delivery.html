@@ -1,11 +1,14 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Delivery | Gato Pingado</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Delivery Gato Pingado</title>
 
     <link rel="stylesheet" href="delivery.css">
     <link rel="stylesheet" href="acessibilidade.css">
@@ -16,167 +19,238 @@
 
 <body>
 
-    <!-- CABEÇALHO -->
+
+
     <header class="cabecalho" id="inicio">
 
-        <div id="foto-perfil">
-            <a href="perfil.html" title="Acessar meu perfil">
-                <img src="imagens/Nova pasta/Logo-Perfil.jpg"
-                     alt="Foto de perfil">
-            </a>
-        </div>
+   
+        <div class="logo">
+            <h1>Delivery</h1>
 
-        <div class="cabecalho-conteudo">
-            <h1 class="titulo">Delivery</h1>
-            <p class="slogan">
+            <span>
                 Seu cantinho favorito, agora na sua casa!
-            </p>
+            </span>
         </div>
-
-   <header>
-    <div class="logo">
-        <h1>Delivery</h1>
-        <span>Seu cantinho favorito, agora na sua casa!</span>
-    </div>
-
-    <nav>
-        
-        <a href="index.html">Início</a>
-        <a href="cardapio.html">Cardápio</a>
-        <a href="gatos.html">Os gatos</a>
-        <a href="loja.html">Loja</a>
-        <a href="redes.html">Nossas redes</a>
-        <a href="sobre-nos.html">Sobre nós</a>
-        <a href="perfil.html">Perfil</a>
-        
-    </nav>
-
-    <div class="acessibilidade-botao">
-
-    <button
-        type="button"
-        id="abrir-acessibilidade"
-        class="botao-acessibilidade"
-        aria-expanded="false"
-        aria-controls="painel-acessibilidade">
-
-        Acessibilidade
-
-    </button>
-
-    <div class="painel-acessibilidade" id="painel-acessibilidade" hidden>
-
-        <button type="button" id="diminuir-fonte">
-            A-
-        </button>
-
-        <button type="button" id="aumentar-fonte">
-            A+
-        </button>
-
-        <button type="button" id="alto-contraste" aria-pressed="false">
-            Alto contraste
-        </button>
-
-    </div>
 
     
-</header>
+        <nav class="menu" aria-label="Menu principal">
+
+            <a href="index.html">Início</a>
+
+            <a href="cardapio.html">Cardápio</a>
+
+            <a href="adoção.html">Adoção</a>
+
+            <a href="gatos.html">Os gatos</a>
+
+            <a href="delivery.html">Delivery</a>
+
+            <a href="redes-sociais.html">Nossas redes</a>
+
+            <a href="sobre-nos.html">Sobre nós</a>
+
+            <a href="perfil.html">Perfil</a>
+
+        </nav>
+        <div class="acessibilidade">
+
+            <button
+                type="button"
+                class="botao-acessibilidade"
+                id="abrir-acessibilidade"
+                aria-expanded="false"
+                aria-controls="painel-acessibilidade">
+
+                Acessibilidade
+            </button>
+
+            <div class="acessibilidade-botao"
+                 id="painel-acessibilidade"
+                 hidden>
+
+                <button type="button"
+                        id="diminuir-fonte"
+                        aria-label="Diminuir fonte">
+                    A-
+                </button>
+
+                <button type="button"
+                        id="aumentar-fonte"
+                        aria-label="Aumentar fonte">
+                    A+
+                </button>
+
+                <button type="button"
+                        id="alto-contraste"
+                        aria-pressed="false">
+                    Alto contraste
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
 
     <main id="conteudo-principal">
 
-        <!-- APRESENTAÇÃO -->
-        <section class="apresentacao-delivery">
+        <section class="apresentacao">
 
-            <h2>Uma patinha de carinho em cada pedido!</h2>
+            <h2 class="titulo-secao">
+                Peça suas delícias favoritas!
+            </h2>
 
-            <p>
-                Que tal aproveitar nossas delícias sem sair
-                de casa? Escolha seus produtos favoritos,
-                monte seu pedido e deixe o Gato Pingado
-                fazer parte do seu dia!
+            <p class="descricao">
+                Escolha seus produtos favoritos e
+                monte seu pedido com muito carinho
+                e algumas patinhas!
             </p>
-
-            <a href="#produtos" class="botao-principal">
-                Fazer meu pedido
-            </a>
 
         </section>
 
-        <!-- ÁREA PRINCIPAL -->
         <div class="layout-delivery">
 
-            <!-- PRODUTOS -->
-            <section class="area-produtos" id="produtos">
 
-                <h2 class="titulo-secao">Nossas delícias</h2>
+            <section class="produtos">
 
-                <!-- DOCINHOS -->
+                <h2 class="subtitulo">Nosso cardápio</h2>
+
+    
                 <h3 class="categoria">Docinhos</h3>
 
                 <div class="grid-produtos">
 
+           
                     <article class="produto">
-                        <img src="imagens/cardapio/Cheesecake Patinhas Vermelhas.jpeg"
-                             alt="Cheesecake de frutas vermelhas">
+
+                        <img
+                            src="imagens/cardapio/Cheesecake Patinhas Vermelhas.jpeg"
+                            alt="Cheesecake de frutas vermelhas">
 
                         <div class="produto-info">
-                            <h4>Cheesecake</h4>
-                            <p>Uma fatia de pura felicidade!</p>
-                            <span class="preco">R$ 20,00</span>
 
-                            <button type="button"
-                                onclick="adicionarCarrinho('Cheesecake', 20)">
+                            <h3>Cheesecake</h3>
+
+                            <p>
+                                Cheesecake cremoso com
+                                frutas vermelhas.
+                            </p>
+
+                            <strong>R$ 20,00</strong>
+
+                            <button
+                                type="button"
+                                onclick="adicionar('Cheesecake', 20)">
                                 Adicionar +
                             </button>
+
+                        </div>
+                    </article>
+
+                    <!-- PATACAKES -->
+                    <article class="produto">
+
+                        <img
+                            src="imagens/cardapio/Patacakes.jpeg"
+                            alt="Panquecas com chocolate">
+
+                        <div class="produto-info">
+
+                            <h3>Patacakes</h3>
+
+                            <p>
+                                Panquecas fofinhas com
+                                chocolate e morangos.
+                            </p>
+
+                            <strong>R$ 15,00</strong>
+
+                            <button
+                                type="button"
+                                onclick="adicionar('Patacakes', 15)">
+                                Adicionar +
+                            </button>
+
                         </div>
                     </article>
 
                     <article class="produto">
-                        <img src="imagens/cardapio/Patacakes.jpeg"
-                             alt="Panquecas com cobertura">
+
+                        <img
+                            src="imagens/cardapio/Meowcarons.jpeg"
+                            alt="Macarons em formato de gatos">
 
                         <div class="produto-info">
-                            <h4>Patacakes</h4>
-                            <p>Panquecas fofinhas com chocolate!</p>
-                            <span class="preco">R$ 15,00</span>
 
-                            <button type="button"
-                                onclick="adicionarCarrinho('Patacakes', 15)">
+                            <h3>Meowcarons</h3>
+
+                            <p>
+                                Macarons de gatinho com
+                                sabores variados.
+                            </p>
+
+                            <strong>R$ 6,00</strong>
+
+                            <button
+                                type="button"
+                                onclick="adicionar('Meowcarons', 6)">
                                 Adicionar +
                             </button>
+
                         </div>
                     </article>
 
                     <article class="produto">
-                        <img src="imagens/cardapio/Meowcarons.jpeg"
-                             alt="Macarons decorados como gatos">
+
+                        <img
+                            src="imagens/cardapio/Croissant.jpeg"
+                            alt="Croissant artesanal">
 
                         <div class="produto-info">
-                            <h4>Meowcarons</h4>
-                            <p>Macarons de diferentes sabores.</p>
-                            <span class="preco">R$ 6,00</span>
 
-                            <button type="button"
-                                onclick="adicionarCarrinho('Meowcarons', 6)">
+                            <h3>Croissant</h3>
+
+                            <p>
+                                Massa folhada, douradinha
+                                e crocante.
+                            </p>
+
+                            <strong>R$ 12,00</strong>
+
+                            <button
+                                type="button"
+                                onclick="adicionar('Croissant', 12)">
                                 Adicionar +
                             </button>
+
                         </div>
                     </article>
 
+                    <!-- MISTO QUENTE -->
                     <article class="produto">
-                        <img src="imagens/cardapio/Croissant.jpeg"
-                             alt="Croissant artesanal">
+
+                        <img
+                            src="imagens/cardapio/Misto Quente.jpeg"
+                            alt="Misto quente de queijo e presunto">
 
                         <div class="produto-info">
-                            <h4>Croissant</h4>
-                            <p>Massa folhada e douradinha.</p>
-                            <span class="preco">R$ 12,00</span>
 
-                            <button type="button"
-                                onclick="adicionarCarrinho('Croissant', 12)">
+                            <h3>Misto Quente</h3>
+
+                            <p>
+                                Sanduíche crocante com
+                                molho especial da casa.
+                            </p>
+
+                            <strong>R$ 10,00</strong>
+
+                            <button
+                                type="button"
+                                onclick="adicionar('Misto Quente', 10)">
                                 Adicionar +
                             </button>
+
                         </div>
                     </article>
 
@@ -187,67 +261,111 @@
 
                 <div class="grid-produtos">
 
+                    <!-- CATPUCCINO -->
                     <article class="produto">
-                        <img src="imagens/cardapio/Catpuccino.jpeg"
-                             alt="Cappuccino cremoso">
+
+                        <img
+                            src="imagens/cardapio/Catpuccino.jpeg"
+                            alt="Cappuccino cremoso">
 
                         <div class="produto-info">
-                            <h4>Catpuccino</h4>
-                            <p>Um abraço quentinho em forma de café.</p>
-                            <span class="preco">R$ 12,00</span>
 
-                            <button type="button"
-                                onclick="adicionarCarrinho('Catpuccino', 12)">
+                            <h3>Catpuccino</h3>
+
+                            <p>
+                                Cappuccino cremoso com
+                                espuma de leite.
+                            </p>
+
+                            <strong>R$ 12,00</strong>
+
+                            <button
+                                type="button"
+                                onclick="adicionar('Catpuccino', 12)">
                                 Adicionar +
                             </button>
+
                         </div>
                     </article>
 
+                    <!-- CATFÉ COM LEITE -->
                     <article class="produto">
-                        <img src="imagens/cardapio/Catfé com Leite.jpeg"
-                             alt="Café com leite">
+
+                        <img
+                            src="imagens/cardapio/Catfé com Leite.jpeg"
+                            alt="Café com leite">
 
                         <div class="produto-info">
-                            <h4>Catfé com Leite</h4>
-                            <p>O clássico que aquece o coração.</p>
-                            <span class="preco">R$ 10,00</span>
 
-                            <button type="button"
-                                onclick="adicionarCarrinho('Catfé com Leite', 10)">
+                            <h3>Catfé com Leite</h3>
+
+                            <p>
+                                Café expresso com
+                                leite vaporizado.
+                            </p>
+
+                            <strong>R$ 10,00</strong>
+
+                            <button
+                                type="button"
+                                onclick="adicionar('Catfé com Leite', 10)">
                                 Adicionar +
                             </button>
+
                         </div>
                     </article>
 
+                    <!-- CAT-LATE -->
                     <article class="produto">
-                        <img src="imagens/cardapio/cat-late.jpeg"
-                             alt="Chocolate quente">
+
+                        <img
+                            src="imagens/cardapio/cat-late.jpeg"
+                            alt="Chocolate quente">
 
                         <div class="produto-info">
-                            <h4>Cat-late</h4>
-                            <p>Chocolate quente com chantilly.</p>
-                            <span class="preco">R$ 14,00</span>
 
-                            <button type="button"
-                                onclick="adicionarCarrinho('Cat-late', 14)">
+                            <h3>Cat-late</h3>
+
+                            <p>
+                                Chocolate quente com
+                                chantilly e calda.
+                            </p>
+
+                            <strong>R$ 14,00</strong>
+
+                            <button
+                                type="button"
+                                onclick="adicionar('Cat-late', 14)">
                                 Adicionar +
                             </button>
+
                         </div>
                     </article>
 
+                    <!-- MOCCAT -->
                     <article class="produto">
-                        <img src="imagens/cardapio/Moccat.jpeg"
-                             alt="Mocha cremoso">
+
+                        <img
+                            src="imagens/cardapio/Moccat.jpeg"
+                            alt="Mocha cremoso">
 
                         <div class="produto-info">
-                            <h4>Moccat</h4>
-                            <p>Café, chocolate e muita cremosidade.</p>
-                            <span class="preco">R$ 15,00</span>
 
-                            <button type="button"
-                                onclick="adicionarCarrinho('Moccat', 15)">
+                            <h3>Moccat</h3>
+
+                            <p>
+                                Combinação de café,
+                                leite e chocolate.
+                            </p>
+
+                            <strong>R$ 15,00</strong>
+
+                            <button
+                                type="button"
+                                onclick="adicionar('Moccat', 15)">
                                 Adicionar +
                             </button>
+
                         </div>
                     </article>
 
@@ -258,35 +376,57 @@
 
                 <div class="grid-produtos">
 
+                    <!-- MEOWSHAKE -->
                     <article class="produto">
-                        <img src="imagens/cardapio/Meowshake.jpeg"
-                             alt="Milk-shake de chocolate">
+
+                        <img
+                            src="imagens/cardapio/Meowshake.jpeg"
+                            alt="Milk-shake de chocolate">
 
                         <div class="produto-info">
-                            <h4>Meowshake</h4>
-                            <p>Chocolate, chantilly e diversão!</p>
-                            <span class="preco">R$ 15,00</span>
 
-                            <button type="button"
-                                onclick="adicionarCarrinho('Meowshake', 15)">
+                            <h3>Meowshake</h3>
+
+                            <p>
+                                Milk-shake de chocolate
+                                com chantilly.
+                            </p>
+
+                            <strong>R$ 15,00</strong>
+
+                            <button
+                                type="button"
+                                onclick="adicionar('Meowshake', 15)">
                                 Adicionar +
                             </button>
+
                         </div>
                     </article>
 
+                    <!-- MATCHA -->
                     <article class="produto">
-                        <img src="imagens/cardapio/matcha.png"
-                             alt="Matcha gelado">
+
+                        <img
+                            src="imagens/cardapio/matcha.png"
+                            alt="Matcha gelado">
 
                         <div class="produto-info">
-                            <h4>Matcha</h4>
-                            <p>Refrescante e cheio de charme.</p>
-                            <span class="preco">R$ 16,50</span>
 
-                            <button type="button"
-                                onclick="adicionarCarrinho('Matcha', 16.50)">
+                            <h3>Matcha</h3>
+
+                            <p>
+                                Chá verde matcha com
+                                leite gelado.
+                            </p>
+
+                            <strong>R$ 16,50</strong>
+
+                            <button
+                                type="button"
+                                onclick="adicionar('Matcha', 16.50)">
                                 Adicionar +
                             </button>
+
                         </div>
                     </article>
 
@@ -294,14 +434,61 @@
 
             </section>
 
-         
+
+
+            <aside class="carrinho">
+
+                <h2>Meu carrinho 🐾</h2>
+
+                <p class="carrinho-texto">
+                    Seus produtos escolhidos:
+                </p>
+
+                <ul id="lista-carrinho"
+                    aria-live="polite">
+                    <li>Nenhum produto adicionado.</li>
+                </ul>
+
+                <div class="resumo-carrinho">
+
+                    <p>
+                        <strong>Total:</strong>
+                        <span id="total-carrinho">
+                            R$ 0,00
+                        </span>
+                    </p>
+
+                </div>
+
+                <button class="finalizar"
+                        type="button"
+                        id="finalizar-pedido">
+                    Finalizar pedido
+                </button>
+
+                <p class="aviso">
+                    Página demonstrativa.
+                    Pedidos não são enviados.
+                </p>
+
+            </aside>
+
+        </div>
 
     </main>
 
-<!-- RODAPÉ -->
-<footer class="site-footer">
-    <p>Gato Pingado · Um espaço de afeto e respeito aos felinos 🐾</p>
-</footer>
+
+    <footer class="rodape">
+
+        <p>
+            <strong>
+                &copy; 2026 - Isabely Gislaine,
+                Marya Motta, Emily Sequineu,
+                Alexsandro Souza
+            </strong>
+        </p>
+
+    </footer>
 
 </body>
 </html>

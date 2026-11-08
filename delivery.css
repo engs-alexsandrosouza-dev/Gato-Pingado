@@ -1,0 +1,558 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap');
+
+/* ==========================================
+   CORES E ESTILOS GERAIS
+========================================== */
+
+:root {
+    --cor-caramel: #A87756;
+    --cor-warmBeige: #D6BAA2;
+    --cor-cream: #F0E0C7;
+    --cor-espresso: #422B23;
+    --cor-rust: #8F513A;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background: var(--cor-cream);
+    color: var(--cor-espresso);
+
+    font-family: 'Nunito', sans-serif;
+}
+
+/* ==========================================
+   CABEÇALHO
+========================================== */
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 25px;
+    padding: 30px 4%;
+
+    background: var(--cor-warmBeige);
+}
+
+/* TÍTULO */
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo h1 {
+    margin: 0;
+
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+
+    color: var(--cor-espresso);
+}
+
+/* SLOGAN */
+
+.logo span {
+    display: block;
+    margin-top: 4px;
+
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+
+    color: var(--cor-espresso);
+}
+
+/* ==========================================
+   MENU
+========================================== */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 20px;
+    padding: 0;
+
+    background: transparent;
+}
+
+.menu a {
+    color: var(--cor-espresso);
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    padding: 7px 0;
+
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: var(--cor-rust);
+}
+
+/* ==========================================
+   ACESSIBILIDADE
+========================================== */
+
+.acessibilidade {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.botao-acessibilidade {
+    padding: 14px 22px;
+
+    background: var(--cor-espresso);
+    color: white;
+
+    border: none;
+    border-radius: 30px;
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+
+    cursor: pointer;
+}
+
+.botao-acessibilidade:hover {
+    background: var(--cor-rust);
+}
+
+/* PAINEL */
+
+#painel-acessibilidade {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+
+    z-index: 100;
+
+    min-width: 180px;
+
+    background: var(--cor-cream);
+    padding: 12px;
+
+    border: 1px solid var(--cor-caramel);
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+#painel-acessibilidade[hidden] {
+    display: none !important;
+}
+
+#painel-acessibilidade button {
+    display: block;
+    width: 100%;
+
+    margin: 5px 0;
+    padding: 10px;
+
+    background: var(--cor-espresso);
+    color: white;
+
+    border: none;
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+/* ==========================================
+   CONTEÚDO PRINCIPAL
+========================================== */
+
+#conteudo-principal {
+    flex: 1;
+
+    width: min(100% - 30px, 1250px);
+    margin: 35px auto;
+}
+
+.apresentacao {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.titulo-secao {
+    margin-bottom: 10px;
+
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2rem;
+
+    color: var(--cor-espresso);
+}
+
+.descricao {
+    margin: 0 auto;
+
+    max-width: 650px;
+
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   LAYOUT DO DELIVERY
+========================================== */
+
+.layout-delivery {
+    display: grid;
+
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 25px;
+
+    align-items: start;
+}
+
+.produtos {
+    min-width: 0;
+}
+
+.subtitulo {
+    margin-top: 0;
+
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.6rem;
+}
+
+/* CATEGORIAS */
+
+.categoria {
+    margin: 30px 0 20px;
+    padding-bottom: 10px;
+
+    border-bottom: 2px solid var(--cor-caramel);
+
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.3rem;
+
+    color: var(--cor-rust);
+}
+
+/* ==========================================
+   GRID DOS PRODUTOS
+========================================== */
+
+.grid-produtos {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+/* ==========================================
+   CARDS DOS PRODUTOS
+========================================== */
+
+.produto {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+
+    background: var(--cor-warmBeige);
+
+    border-radius: 15px;
+    overflow: hidden;
+
+    text-align: center;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+
+    transition: transform 0.3s;
+}
+
+.produto:hover {
+    transform: translateY(-4px);
+}
+
+/* IMAGENS */
+
+.produto img {
+    display: block;
+
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+/* INFORMAÇÕES */
+
+.produto-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    flex: 1;
+    padding: 20px;
+}
+
+.produto-info h3 {
+    margin: 0 0 10px;
+
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.3rem;
+}
+
+.produto-info p {
+    flex: 1;
+
+    margin: 0 0 15px;
+
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.produto-info strong {
+    display: block;
+    margin-bottom: 15px;
+
+    font-size: 1.15rem;
+
+    color: var(--cor-rust);
+}
+
+/* ==========================================
+   BOTÃO ADICIONAR
+========================================== */
+
+.produto-info button {
+    width: 100%;
+
+    padding: 12px 20px;
+
+    background: var(--cor-espresso);
+    color: white;
+
+    border: none;
+    border-radius: 9px;
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: background 0.3s;
+}
+
+.produto-info button:hover {
+    background: var(--cor-rust);
+}
+
+/* ==========================================
+   CARRINHO
+========================================== */
+
+.carrinho {
+    position: sticky;
+    top: 20px;
+
+    background: var(--cor-warmBeige);
+
+    padding: 22px;
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.carrinho h2 {
+    margin: 0 0 10px;
+
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.5rem;
+}
+
+.carrinho-texto {
+    font-size: 0.9rem;
+}
+
+/* LISTA */
+
+#lista-carrinho {
+    padding-left: 20px;
+
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+#lista-carrinho li {
+    margin: 10px 0;
+}
+
+.item-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.remover-item {
+    background: var(--cor-rust);
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    padding: 5px 8px;
+
+    cursor: pointer;
+}
+
+/* TOTAL */
+
+.resumo-carrinho {
+    margin: 20px 0;
+    padding-top: 10px;
+
+    border-top: 1px solid var(--cor-caramel);
+}
+
+.resumo-carrinho p {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    font-size: 1rem;
+}
+
+/* FINALIZAR */
+
+.finalizar {
+    width: 100%;
+
+    padding: 13px;
+
+    background: var(--cor-espresso);
+    color: white;
+
+    border: none;
+    border-radius: 9px;
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.finalizar:hover {
+    background: var(--cor-rust);
+}
+
+.aviso {
+    margin-top: 15px;
+
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+/* ==========================================
+   RODAPÉ
+========================================== */
+
+.rodape {
+    background: var(--cor-caramel);
+    color: var(--cor-cream);
+
+    padding: 20px;
+    text-align: center;
+}
+
+.rodape p {
+    margin: 0;
+}
+
+/* ==========================================
+   RESPONSIVIDADE
+========================================== */
+
+@media (max-width: 1100px) {
+
+    .cabecalho {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .layout-delivery {
+        grid-template-columns: 1fr;
+    }
+
+    .carrinho {
+        position: static;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 18px;
+        padding: 25px 15px;
+    }
+
+    .logo h1 {
+        font-size: 1.8rem;
+    }
+
+    .logo span {
+        letter-spacing: 1px;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+
+    .menu a {
+        font-size: 0.85rem;
+    }
+
+    .grid-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .produto img {
+        height: 280px;
+    }
+
+    .titulo-secao {
+        font-size: 1.6rem;
+    }
+
+    #painel-acessibilidade {
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
