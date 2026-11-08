@@ -5,11 +5,11 @@
 
 :root {
     --caramel: #A87756;
-    --warm-beige: #E6C9A8;
-    --cream: #FFF1D6;
-    --espresso: #8F513A;
+    --warm-beige: #D6BAA2;
+    --cream: #F0E0C7;
+    --espresso: #422B23;
 
-    --text: #3B2924;
+    --text: #151515;
     --background: #FFF1D6;
     --card-background: #FFFFFF;
 
@@ -57,7 +57,7 @@ button,
     font-weight: bold;
     cursor: pointer;
     border: 2px solid var(--espresso);
-    border-radius: 0.5rem;
+    border-radius: 1.5rem;
     padding: 0.7rem 1rem;
     background-color: var(--cream);
     color: var(--espresso);
