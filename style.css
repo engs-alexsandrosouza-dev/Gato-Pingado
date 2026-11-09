@@ -489,3 +489,375 @@ img{
     }
 }
 
+
+/* ==========================================
+   CORREÇÕES GERAIS DE RESPONSIVIDADE
+========================================== */
+
+html {
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+body {
+    width: 100%;
+    min-width: 0;
+}
+
+/* Imagens nunca ultrapassam o container */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Permite que elementos flex encolham */
+.hero-content,
+.hero-image,
+.menu-intro,
+.promo-text,
+.promo-desc {
+    min-width: 0;
+}
+
+/* MENU DO CABEÇALHO */
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+header nav a {
+    white-space: nowrap;
+}
+
+/* IMAGEM PRINCIPAL */
+.hero-image img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* CARTÕES DO CARDÁPIO */
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* ELEMENTOS DA PROMOÇÃO */
+.promo-images {
+    max-width: 100%;
+}
+
+/* ==========================================
+   NOTEBOOKS E TABLETS
+========================================== */
+
+@media (max-width: 1100px) {
+
+    /* CABEÇALHO */
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 1.5rem 4%;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    header nav {
+        flex: 1 1 100%;
+        order: 3;
+        gap: 1rem;
+    }
+
+    /* APRESENTAÇÃO */
+    .hero {
+        gap: 2rem;
+        padding: 3rem 4%;
+    }
+
+    .hero-content h2 {
+        font-size: 2.8rem;
+    }
+
+    /* CARDÁPIO POPULAR */
+    .popular-menu {
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    /* PROMOÇÕES */
+    .promo {
+        gap: 1.5rem;
+        padding: 3rem 4%;
+    }
+
+    .footer-content {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
+
+/* ==========================================
+   TABLETS
+========================================== */
+
+@media (max-width: 768px) {
+
+    /* CABEÇALHO */
+    header {
+        flex-direction: column;
+        padding: 1.5rem 5%;
+        gap: 1rem;
+    }
+
+    .logo {
+        margin: 0;
+        text-align: center;
+    }
+
+    header nav {
+        order: 0;
+        flex: none;
+        width: 100%;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        gap: 0.75rem 1.2rem;
+        margin: 0;
+    }
+
+    header nav a {
+        font-size: 0.9rem;
+        padding: 0.5rem 0;
+        border-bottom: none;
+    }
+
+    .support-btn {
+        width: auto;
+        max-width: 100%;
+        padding: 0.8rem 1.5rem;
+    }
+
+    /* APRESENTAÇÃO PRINCIPAL */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 2.5rem 5%;
+        gap: 2rem;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        max-width: 600px;
+        margin: 0 auto 2rem;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .placeholder-art {
+        font-size: 8rem;
+    }
+
+    /* CARDÁPIO POPULAR */
+    .popular-menu {
+        flex-direction: column;
+        text-align: center;
+
+        margin: 2rem 5%;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .menu-intro p {
+        max-width: 450px;
+        margin: 0 auto 1.5rem;
+    }
+
+    .menu-items {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 160px;
+        max-width: 100%;
+    }
+
+    /* PROMOÇÕES */
+    .promo,
+    .promo.promo-dark {
+        flex-direction: column;
+        text-align: center;
+
+        margin: 1.5rem 5%;
+        padding: 2rem;
+        gap: 1.5rem;
+    }
+
+    .promo-desc p {
+        max-width: 500px;
+        margin: 0 auto 1rem;
+    }
+
+    .promo-text h2 {
+        font-size: 2rem;
+    }
+
+    .promo-images,
+    .promo-icon {
+        font-size: 3.5rem;
+    }
+
+    /* RODAPÉ */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer-text h2 {
+        font-size: 2.3rem;
+    }
+
+    .footer-text p {
+        max-width: 500px;
+        margin: 0 auto 2rem;
+    }
+}
+
+/* ==========================================
+   CELULARES
+========================================== */
+
+@media (max-width: 480px) {
+
+    /* CABEÇALHO */
+    header {
+        padding: 1.2rem 4%;
+    }
+
+    .logo h1 {
+        font-size: 1.8rem;
+    }
+
+    .logo span {
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+    }
+
+    header nav {
+        gap: 0.5rem 0.9rem;
+    }
+
+    header nav a {
+        font-size: 0.8rem;
+    }
+
+    .support-btn {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    /* APRESENTAÇÃO */
+    .hero {
+        padding: 2rem 5%;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .btn-dark,
+    .btn-outline {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .placeholder-art {
+        font-size: 5rem;
+    }
+
+    /* CARDÁPIO */
+    .popular-menu {
+        margin: 1.5rem 4%;
+        padding: 1.5rem;
+        border-radius: 20px;
+    }
+
+    .menu-intro h3 {
+        font-size: 1.6rem;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* PROMOÇÕES */
+    .promo,
+    .promo.promo-dark {
+        margin: 1rem 4%;
+        padding: 1.5rem;
+        border-radius: 20px;
+    }
+
+    .promo-text h2 {
+        font-size: 1.7rem;
+    }
+
+    .promo-images,
+    .promo-icon {
+        font-size: 2.5rem;
+    }
+
+    /* RODAPÉ */
+    .footer-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .site-footer {
+        padding: 1.5rem 1rem;
+        font-size: 0.85rem;
+    }
+}
