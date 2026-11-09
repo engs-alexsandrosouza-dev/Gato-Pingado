@@ -114,3 +114,5 @@ Na estrutura global:
    cd NOME-DO-REPOSITORIO
 
 3. Abra o arquivo `index.html` em qualquer navegador web.
+
+4. Acesse o site do Gato-Pingano no Github Pages: https://engs-alexsandrosouza-dev.github.io/Gato-Pingado/
